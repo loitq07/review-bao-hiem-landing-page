@@ -490,117 +490,629 @@
     </div>
   </section>
 
-  <!-- Feedback Section (PRIORITIZED) -->
+  <!-- Feedback Section -->
   <section id="feedback" class="py-16 sm:py-24 bg-gradient-to-b from-navy-50 to-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center fade-in">
         <span
-          class="inline-block px-3 py-1 text-xs font-semibold uppercase tracking-wider text-brand-600 bg-brand-50 rounded-full">Feedback
-          tư vấn viên</span>
-        <h2 class="mt-4 text-3xl sm:text-4xl font-bold text-navy-800">Tư vấn viên nói gì về chúng tôi?</h2>
-        <p class="mt-4 text-lg text-slate-500 max-w-2xl mx-auto">Khách quan – Đồng hành cùng Khách hàng và Tư vấn viên
+          class="inline-block px-3 py-1 text-xs font-semibold uppercase tracking-wider text-brand-600 bg-brand-50 rounded-full">Đánh
+          giá thực tế</span>
+        <h2 class="mt-4 text-3xl sm:text-4xl font-bold text-navy-800">Cộng đồng nói gì về chúng tôi?</h2>
+        <p class="mt-4 text-lg text-slate-500 max-w-2xl mx-auto">Những chia sẻ khách quan và chân thực từ cả Khách hàng
+          và Tư vấn viên tại Review Bảo Hiểm.
         </p>
       </div>
 
-      <div class="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-8 fade-in">
-        <!-- Feedback card 1 -->
-        <div
-          class="bg-white rounded-2xl p-8 border border-navy-100/60 shadow-sm hover:shadow-md transition-shadow duration-200">
-          <div class="flex items-center gap-1 mb-4">
-            <svg class="w-5 h-5 text-brand-400" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
-            </svg>
-            <svg class="w-5 h-5 text-brand-400" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
-            </svg>
-            <svg class="w-5 h-5 text-brand-400" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
-            </svg>
-            <svg class="w-5 h-5 text-brand-400" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
-            </svg>
-            <svg class="w-5 h-5 text-brand-400" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
-            </svg>
+      <!-- Tabs Filter -->
+      <div class="mt-8 flex flex-wrap justify-center gap-3 fade-in">
+        <button id="btn-feedback-all" onclick="filterFeedback('all')"
+          class="px-6 py-2.5 text-sm font-semibold rounded-full bg-brand-500 text-white shadow-md shadow-brand-500/20 hover:shadow-lg transition-all duration-200 cursor-pointer">
+          Tất cả (11)
+        </button>
+        <button id="btn-feedback-khachhang" onclick="filterFeedback('khachhang')"
+          class="px-6 py-2.5 text-sm font-semibold rounded-full bg-white text-slate-600 hover:bg-brand-50 hover:text-brand-600 border border-slate-200 shadow-sm transition-all duration-200 cursor-pointer">
+          Khách hàng (3)
+        </button>
+        <button id="btn-feedback-tvv" onclick="filterFeedback('tvv')"
+          class="px-6 py-2.5 text-sm font-semibold rounded-full bg-white text-slate-600 hover:bg-brand-50 hover:text-brand-600 border border-slate-200 shadow-sm transition-all duration-200 cursor-pointer">
+          Tư vấn viên (8)
+        </button>
+      </div>
+
+      <div class="mt-12 columns-1 sm:columns-2 lg:columns-3 gap-8 fade-in">
+        <!-- Client Feedback 1: Lý Nguyễn -->
+        <div data-category="khachhang"
+          class="feedback-card inline-block w-full mb-8 bg-white rounded-2xl p-6 sm:p-8 border border-navy-100/60 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300 break-inside-avoid cursor-default">
+          <div>
+            <div class="flex items-center justify-between gap-2 mb-4">
+              <div class="flex items-center gap-0.5 text-amber-400">
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                  <path
+                    d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                </svg>
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                  <path
+                    d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                </svg>
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                  <path
+                    d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                </svg>
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                  <path
+                    d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                </svg>
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                  <path
+                    d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                </svg>
+              </div>
+              <span class="px-2.5 py-1 text-xs font-semibold text-navy-600 bg-navy-50 rounded-full shrink-0">Khách
+                hàng</span>
+            </div>
+            <p class="text-slate-600 text-[15px] leading-relaxed italic mb-6">
+              "Mình là KH đã ký 2 hợp đồng với Gen và AIA tại Gr này. Mình tàu ngầm trong này khá lâu cỡ gần 2 năm. Mình
+              thấy qua gr mình hiểu hơn bảo hiểm rất nhiều. Tvv trong này nhiều, mình đc quyền lựa chọn và đánh giá =>
+              lựa chọn phù hợp nhất. Mình từng mua BH theo hình thức ủng hộ người nhà. Sau thì biến cố xảy ra ko biết
+              xly tn, cũng ko đc hỗ trợ Vậy nên mình đánh giá cao chất lượng Tvv trong gr. Cám ơn add tạo ra sân chơi
+              công bằng cho những khách hàng như mình"
+            </p>
           </div>
-          <p class="text-slate-600 leading-relaxed italic">"Group giúp mình tiếp cận được rất nhiều khách hàng thực sự
-            có nhu cầu. Quy trình minh bạch, BQT hỗ trợ nhiệt tình."</p>
-          <div class="mt-6 flex items-center gap-3">
+          <div>
+            <div class="flex items-center gap-3 pt-4 border-t border-slate-100">
+              <img class="w-12 h-12 rounded-full object-cover shadow-sm border-2 border-brand-100"
+                src="assets/khachhang/nguyenly.png" alt="Lý Nguyễn" loading="lazy" />
+              <div>
+                <p class="text-sm font-bold text-navy-800">Lý Nguyễn</p>
+                <p class="text-xs text-slate-400 font-medium">Khách hàng tại Group</p>
+              </div>
+            </div>
             <div
-              class="w-10 h-10 rounded-full bg-navy-100 flex items-center justify-center text-navy-600 font-bold text-sm">
-              TV</div>
-            <div>
-              <p class="text-sm font-semibold text-navy-800">Tư vấn viên ghi danh</p>
-              <p class="text-xs text-slate-400">Gói Cao Cấp – 1 năm</p>
+              class="mt-3.5 bg-slate-50 rounded-xl p-3 border border-slate-100 text-[11px] text-slate-500 leading-normal">
+              <strong class="text-slate-700">Chi tiết:</strong> Tàu ngầm trong group gần 2 năm, ký 2 hợp đồng bảo hiểm
+              với Generali và AIA.
             </div>
           </div>
         </div>
 
-        <!-- Feedback card 2 -->
-        <div
-          class="bg-white rounded-2xl p-8 border border-navy-100/60 shadow-sm hover:shadow-md transition-shadow duration-200">
-          <div class="flex items-center gap-1 mb-4">
-            <svg class="w-5 h-5 text-brand-400" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
-            </svg>
-            <svg class="w-5 h-5 text-brand-400" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
-            </svg>
-            <svg class="w-5 h-5 text-brand-400" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
-            </svg>
-            <svg class="w-5 h-5 text-brand-400" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
-            </svg>
-            <svg class="w-5 h-5 text-brand-400" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
-            </svg>
+        <!-- Client Feedback 2: Loan Huỳnh -->
+        <div data-category="khachhang"
+          class="feedback-card inline-block w-full mb-8 bg-white rounded-2xl p-6 sm:p-8 border border-navy-100/60 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300 break-inside-avoid cursor-default">
+          <div>
+            <div class="flex items-center justify-between gap-2 mb-4">
+              <div class="flex items-center gap-0.5 text-amber-400">
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                  <path
+                    d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                </svg>
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                  <path
+                    d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                </svg>
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                  <path
+                    d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                </svg>
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                  <path
+                    d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                </svg>
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                  <path
+                    d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                </svg>
+              </div>
+              <span class="px-2.5 py-1 text-xs font-semibold text-navy-600 bg-navy-50 rounded-full shrink-0">Khách
+                hàng</span>
+            </div>
+            <p class="text-slate-600 text-[15px] leading-relaxed italic mb-6">
+              "Là một khách hàng trẻ và khi mới bắt đầu tìm hiểu về bảo hiểm, mình xem group như một nơi để học hỏi, đặt
+              câu hỏi và tìm kiếm thông tin. Giữa rất nhiều nguồn thông tin khác nhau, mình nhận ra việc có người tư vấn
+              chuyên môn, phân tích đúng với nhu cầu thực tế là vô cùng quan trọng. May mắn là mình đã gặp được anh chị
+              tư vấn viên phù hợp tại group này. Hai anh chị hỗ trợ hồ sơ cho mình rất tận tâm, nhiệt tình, cung cấp
+              thông tin đầy đủ và chính xác, giúp mình cảm thấy an tâm và tin tưởng hơn. Đến hiện tại, mình đã sở hữu 2
+              hợp đồng bảo hiểm để bảo vệ cho cả hai vợ chồng."
+            </p>
           </div>
-          <p class="text-slate-600 leading-relaxed italic">"Trước đây mình hay bị khách hàng e ngại khi tư vấn online.
-            Nhờ huy hiệu ghi danh trong group, khách hàng tin tưởng hơn rất nhiều."</p>
-          <div class="mt-6 flex items-center gap-3">
+          <div>
+            <div class="flex items-center gap-3 pt-4 border-t border-slate-100">
+              <img class="w-12 h-12 rounded-full object-cover shadow-sm border-2 border-brand-100"
+                src="assets/khachhang/loanhuynh.jpg" alt="Loan Huỳnh" loading="lazy" />
+              <div>
+                <p class="text-sm font-bold text-navy-800">Loan Huỳnh</p>
+                <p class="text-xs text-slate-400 font-medium">Nhân viên văn phòng tại HCM</p>
+              </div>
+            </div>
             <div
-              class="w-10 h-10 rounded-full bg-brand-100 flex items-center justify-center text-brand-600 font-bold text-sm">
-              KH</div>
-            <div>
-              <p class="text-sm font-semibold text-navy-800">Tư vấn viên ghi danh</p>
-              <p class="text-xs text-slate-400">Gói Phổ Thông – 6 tháng</p>
+              class="mt-3.5 bg-slate-50 rounded-xl p-3 border border-slate-100 text-[11px] text-slate-500 leading-normal">
+              <strong class="text-slate-700">Chi tiết:</strong> Bạn là nhân viên văn phòng tại HCM, khi bước vào hôn
+              nhân bạn tìm hiểu BHNT và ký hợp đồng cho bản thân và chồng với tư vấn viên tại RVBH.
             </div>
           </div>
         </div>
 
-        <!-- Feedback card 3 -->
-        <div
-          class="bg-white rounded-2xl p-8 border border-navy-100/60 shadow-sm hover:shadow-md transition-shadow duration-200">
-          <div class="flex items-center gap-1 mb-4">
-            <svg class="w-5 h-5 text-brand-400" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
-            </svg>
-            <svg class="w-5 h-5 text-brand-400" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
-            </svg>
-            <svg class="w-5 h-5 text-brand-400" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
-            </svg>
-            <svg class="w-5 h-5 text-brand-400" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
-            </svg>
-            <svg class="w-5 h-5 text-brand-400" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
-            </svg>
+        <!-- Client Feedback 3: Minh Quân -->
+        <div data-category="khachhang"
+          class="feedback-card inline-block w-full mb-8 bg-white rounded-2xl p-6 sm:p-8 border border-navy-100/60 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300 break-inside-avoid cursor-default">
+          <div>
+            <div class="flex items-center justify-between gap-2 mb-4">
+              <div class="flex items-center gap-0.5 text-amber-400">
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                  <path
+                    d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                </svg>
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                  <path
+                    d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                </svg>
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                  <path
+                    d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                </svg>
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                  <path
+                    d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                </svg>
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                  <path
+                    d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                </svg>
+              </div>
+              <span class="px-2.5 py-1 text-xs font-semibold text-navy-600 bg-navy-50 rounded-full shrink-0">Khách
+                hàng</span>
+            </div>
+            <p class="text-slate-600 text-[15px] leading-relaxed italic mb-6">
+              "Em không biết gì về BH xong đọc các post trong nhóm nên cũng có kiến thức kha khá. Xong chốt được mấy HD
+              lận của các tư vấn viên trộm vía toàn người uy tín nên cũng yên sử dụng, rồi còn được truyền đam mê tư
+              vấn"
+            </p>
           </div>
-          <p class="text-slate-600 leading-relaxed italic">"600-800 bài hỏi bảo hiểm mỗi tháng là nguồn lead chất lượng.
-            Mình đã ký được nhiều hợp đồng từ đây."</p>
-          <div class="mt-6 flex items-center gap-3">
+          <div>
+            <div class="flex items-center gap-3 pt-4 border-t border-slate-100">
+              <img class="w-12 h-12 rounded-full object-cover shadow-sm border-2 border-brand-100"
+                src="assets/khachhang/minhquan.jpg" alt="Minh Quân" loading="lazy" />
+              <div>
+                <p class="text-sm font-bold text-navy-800">Minh Quân</p>
+                <p class="text-xs text-slate-400 font-medium">Làm việc tại LPbank</p>
+              </div>
+            </div>
             <div
-              class="w-10 h-10 rounded-full bg-navy-100 flex items-center justify-center text-navy-600 font-bold text-sm">
-              TH</div>
-            <div>
-              <p class="text-sm font-semibold text-navy-800">Tư vấn viên Tinh Hoa</p>
-              <p class="text-xs text-slate-400">Elite Consultant</p>
+              class="mt-3.5 bg-slate-50 rounded-xl p-3 border border-slate-100 text-[11px] text-slate-500 leading-normal">
+              <strong class="text-slate-700">Chi tiết:</strong> Nguyễn Hoàng Minh Quân làm việc tại LPbank, tham gia
+              group với mong muốn học hỏi kinh nghiệm và tìm mua bảo hiểm cho bản thân và gia đình. Đã tham gia nhiều
+              hợp đồng bảo hiểm cả nhân thọ và phi nhân thọ cho cả nhà với tư vấn viên trong group RVBH.
             </div>
           </div>
         </div>
+
+        <!-- TVV Feedback 1: Sơn Phạm -->
+        <div data-category="tvv"
+          class="feedback-card inline-block w-full mb-8 bg-white rounded-2xl p-6 sm:p-8 border border-navy-100/60 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300 break-inside-avoid cursor-default">
+          <div>
+            <div class="flex items-center justify-between gap-2 mb-4">
+              <div class="flex items-center gap-0.5 text-amber-400">
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                  <path
+                    d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                </svg>
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                  <path
+                    d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                </svg>
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                  <path
+                    d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                </svg>
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                  <path
+                    d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                </svg>
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                  <path
+                    d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                </svg>
+              </div>
+              <span class="px-2.5 py-1 text-xs font-semibold text-brand-600 bg-brand-50 rounded-full shrink-0">Tư vấn
+                viên</span>
+            </div>
+            <p class="text-slate-600 text-[15px] leading-relaxed italic mb-6">
+              "Em chỉ biết nói biết ơn thôi. Khi loay hoay nhất thì biết đến nhóm review BH và trộm vía ngay từ tgian
+              đầu là tháng 10/2024 bắt đầu có KH đầu tiên ạ. Sau đó đều đều tháng nào hầu như cũng có KH từ group. Và
+              2025 em đạt dc MDRT cũng phải nói KH từ group khoảng 85-90%. Cũng không biết nói gì hơn ngoài sự biết ơn
+              ạ💚."
+            </p>
+          </div>
+          <div>
+            <div class="flex items-center gap-3 pt-4 border-t border-slate-100">
+              <img class="w-12 h-12 rounded-full object-cover shadow-sm border-2 border-brand-100"
+                src="assets/tvv/dai_sonpham.jpg" alt="Sơn Phạm" loading="lazy" />
+              <div>
+                <p class="text-sm font-bold text-navy-800">Sơn Phạm</p>
+                <p class="text-xs text-slate-400 font-medium">MDRT Dai-ichi</p>
+              </div>
+            </div>
+            <div
+              class="mt-3.5 bg-slate-50 rounded-xl p-3 border border-slate-100 text-[11px] text-slate-500 leading-normal">
+              <strong class="text-slate-700">Chi tiết:</strong> MDRT Daiichi Sơn Phạm với kinh nghiệm 3 năm trong ngành,
+              tốt nghiệp chuyên ngành BH Trường Đại học KTQD.
+            </div>
+          </div>
+        </div>
+
+        <!-- TVV Feedback 2: Võ Cẩm Chi -->
+        <div data-category="tvv"
+          class="feedback-card inline-block w-full mb-8 bg-white rounded-2xl p-6 sm:p-8 border border-navy-100/60 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300 break-inside-avoid cursor-default">
+          <div>
+            <div class="flex items-center justify-between gap-2 mb-4">
+              <div class="flex items-center gap-0.5 text-amber-400">
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                  <path
+                    d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                </svg>
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                  <path
+                    d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                </svg>
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                  <path
+                    d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                </svg>
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                  <path
+                    d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                </svg>
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                  <path
+                    d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                </svg>
+              </div>
+              <span class="px-2.5 py-1 text-xs font-semibold text-brand-600 bg-brand-50 rounded-full shrink-0">Tư vấn
+                viên</span>
+            </div>
+            <p class="text-slate-600 text-[15px] leading-relaxed italic mb-6">
+              "Năm đầu làm bảo hiểm dành được MDRT nhờ lượng khách hàng ở Group chất lượng"
+            </p>
+          </div>
+          <div>
+            <div class="flex items-center gap-3 pt-4 border-t border-slate-100">
+              <img class="w-12 h-12 rounded-full object-cover shadow-sm border-2 border-brand-100"
+                src="assets/tvv/dai_camchi.jpg" alt="Võ Cẩm Chi" loading="lazy" />
+              <div>
+                <p class="text-sm font-bold text-navy-800">Võ Cẩm Chi</p>
+                <p class="text-xs text-slate-400 font-medium">Tư vấn viên xuất sắc</p>
+              </div>
+            </div>
+            <div
+              class="mt-3.5 bg-slate-50 rounded-xl p-3 border border-slate-100 text-[11px] text-slate-500 leading-normal">
+              <strong class="text-slate-700">Chi tiết:</strong> Võ Cẩm Chi - MDRT 2026 - mới bước chân vào ngành BH
+              nhưng luôn học hỏi, hỗ trợ khách hàng không ngừng nghỉ. Thường xuyên đạt top TVV xuất sắc tuần/tháng/quý
+              của khu vực. Với con số 3 tháng đầu tiên ghi danh ký 27 hợp đồng trong nhóm.
+            </div>
+          </div>
+        </div>
+
+        <!-- TVV Feedback 3: Ngô Thị Thu Thủy -->
+        <div data-category="tvv"
+          class="feedback-card inline-block w-full mb-8 bg-white rounded-2xl p-6 sm:p-8 border border-navy-100/60 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300 break-inside-avoid cursor-default">
+          <div>
+            <div class="flex items-center justify-between gap-2 mb-4">
+              <div class="flex items-center gap-0.5 text-amber-400">
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                  <path
+                    d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                </svg>
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                  <path
+                    d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                </svg>
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                  <path
+                    d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                </svg>
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                  <path
+                    d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                </svg>
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                  <path
+                    d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                </svg>
+              </div>
+              <span class="px-2.5 py-1 text-xs font-semibold text-brand-600 bg-brand-50 rounded-full shrink-0">Tư vấn
+                viên</span>
+            </div>
+            <p class="text-slate-600 text-[15px] leading-relaxed italic mb-6">
+              "Năm 2025 mình biết đến Gr RVBH tính đến giờ là bước sang năm thứ 2. Mình may mắn là 2025 có tầm 40 kh đến
+              từ Gr, từ đầu năm 2026 tới giờ 10 KH đã ký "
+            </p>
+          </div>
+          <div>
+            <div class="flex items-center gap-3 pt-4 border-t border-slate-100">
+              <img class="w-12 h-12 rounded-full object-cover shadow-sm border-2 border-brand-100"
+                src="assets/tvv/gen_ngothuy.jpg" alt="Ngô Thị Thu Thủy" loading="lazy" />
+              <div>
+                <p class="text-sm font-bold text-navy-800">Ngô Thị Thu Thủy</p>
+                <p class="text-xs text-slate-400 font-medium">Generali Business Manager</p>
+              </div>
+            </div>
+            <div
+              class="mt-3.5 bg-slate-50 rounded-xl p-3 border border-slate-100 text-[11px] text-slate-500 leading-normal">
+              <strong class="text-slate-700">Chi tiết:</strong> Ngô Thị Thu Thủy bước vào ngành bảo hiểm từ năm 2016 với
+              cty đầu tiên là Aviva sau đó gắn bó và đồng hành với Generali với vai trò trưởng phòng kinh doanh - Là
+              MDRT nhiều năm, hỗ trợ nhiều khách hàng trong và ngoài group.
+            </div>
+          </div>
+        </div>
+
+        <!-- TVV Feedback 4: Trần Thị Hải Vân -->
+        <div data-category="tvv"
+          class="feedback-card inline-block w-full mb-8 bg-white rounded-2xl p-6 sm:p-8 border border-navy-100/60 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300 break-inside-avoid cursor-default">
+          <div>
+            <div class="flex items-center justify-between gap-2 mb-4">
+              <div class="flex items-center gap-0.5 text-amber-400">
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                  <path
+                    d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                </svg>
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                  <path
+                    d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                </svg>
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                  <path
+                    d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                </svg>
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                  <path
+                    d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                </svg>
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                  <path
+                    d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                </svg>
+              </div>
+              <span class="px-2.5 py-1 text-xs font-semibold text-brand-600 bg-brand-50 rounded-full shrink-0">Tư vấn
+                viên</span>
+            </div>
+            <p class="text-slate-600 text-[15px] leading-relaxed italic mb-6">
+              "Em may mắn được nhiều KH tin tưởng và ký được rất nhiều HĐ từ group RVBH. Đến giờ em cũng vẫn ưu tiên
+              giới thiệu group này đầu tiên cho đồng nghiệp và các bạn trong team, vì trong nhiều group thì RVBH có hoạt
+              động hiệu quả nhất, chắc nhờ BQT support rất chuyên nghiệp ạ "
+            </p>
+          </div>
+          <div>
+            <div class="flex items-center gap-3 pt-4 border-t border-slate-100">
+              <img class="w-12 h-12 rounded-full object-cover shadow-sm border-2 border-brand-100"
+                src="assets/tvv/aia_haivan.jpg" alt="Trần Thị Hải Vân" loading="lazy" />
+              <div>
+                <p class="text-sm font-bold text-navy-800">Trần Thị Hải Vân</p>
+                <p class="text-xs text-slate-400 font-medium">AIA EXC Hà Nội</p>
+              </div>
+            </div>
+            <div
+              class="mt-3.5 bg-slate-50 rounded-xl p-3 border border-slate-100 text-[11px] text-slate-500 leading-normal">
+              <strong class="text-slate-700">Chi tiết:</strong> Trần Thị Hải Vân - AIA EXC Hà Nội, MDRT nhiều năm -
+              trong quá trình làm nghề đã hỗ trợ 999 ca bồi thường - với quan điểm “tự hào nhiều năm làm nghề chưa từng
+              để lọt 1 hồ sơ nào KH bị từ chối bồi thường vô lý”.
+            </div>
+          </div>
+        </div>
+
+        <!-- TVV Feedback 5: Phạm Thị Hải Vân -->
+        <div data-category="tvv"
+          class="feedback-card inline-block w-full mb-8 bg-white rounded-2xl p-6 sm:p-8 border border-navy-100/60 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300 break-inside-avoid cursor-default">
+          <div>
+            <div class="flex items-center justify-between gap-2 mb-4">
+              <div class="flex items-center gap-0.5 text-amber-400">
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                  <path
+                    d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                </svg>
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                  <path
+                    d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                </svg>
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                  <path
+                    d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                </svg>
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                  <path
+                    d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                </svg>
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                  <path
+                    d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                </svg>
+              </div>
+              <span class="px-2.5 py-1 text-xs font-semibold text-brand-600 bg-brand-50 rounded-full shrink-0">Tư vấn
+                viên</span>
+            </div>
+            <p class="text-slate-600 text-[15px] leading-relaxed italic mb-6">
+              "Mình vô nhóm hình như từ 2025, trộm vía cũng hữu duyên và ký đc HĐ từ nhóm và quý 1 2026 thì toàn bộ là
+              từ nhóm. Điểm mình thích là KH là KH thật, có nhu cầu, không bị seeding bẩn và khi có TVV nào nói chưa
+              đúng về bên còn lại, mng cũng góp ý lịch sự, không công kích. Mục tiêu là KH hiểu rõ, hiểu đủ và đúng, còn
+              chọn ai thì tuỳ duyên. ❤️ Không biết có KH nào đã chọn mình qua nhóm và còn ở trong này thì có thể bình
+              luận ẩn danh cũng dc, vì mình thấy KH lên tiếng sẽ có trọng lượng hơn, mỗi cái KH của mình đa số hướng nội
+              ko à 😁. Cảm ơn mng đã tạo một nhóm chất lượng."
+            </p>
+          </div>
+          <div>
+            <div class="flex items-center gap-3 pt-4 border-t border-slate-100">
+              <img class="w-12 h-12 rounded-full object-cover shadow-sm border-2 border-brand-100"
+                src="assets/tvv/aia_haivan_hcm.jpg" alt="Phạm Thị Hải Vân" loading="lazy" />
+              <div>
+                <p class="text-sm font-bold text-navy-800">Phạm Thị Hải Vân</p>
+                <p class="text-xs text-slate-400 font-medium">AIA Sài Gòn</p>
+              </div>
+            </div>
+            <div
+              class="mt-3.5 bg-slate-50 rounded-xl p-3 border border-slate-100 text-[11px] text-slate-500 leading-normal">
+              <strong class="text-slate-700">Chi tiết:</strong> Tình cờ biết đến nhóm khi lướt Facebook. Tiêu chí: MUA
+              BH LÀ AN TÂM DÀI LÂU, KHÔNG NÊN LÀ GÁNH NẶNG MAI SAU. Mong mỗi khách hàng hữu duyên trang bị được sự an
+              tâm cần thiết.
+            </div>
+          </div>
+        </div>
+
+        <!-- TVV Feedback 6: Nguyễn Minh Thảo -->
+        <div data-category="tvv"
+          class="feedback-card inline-block w-full mb-8 bg-white rounded-2xl p-6 sm:p-8 border border-navy-100/60 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300 break-inside-avoid cursor-default">
+          <div>
+            <div class="flex items-center justify-between gap-2 mb-4">
+              <div class="flex items-center gap-0.5 text-amber-400">
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                  <path
+                    d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                </svg>
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                  <path
+                    d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                </svg>
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                  <path
+                    d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                </svg>
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                  <path
+                    d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                </svg>
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                  <path
+                    d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                </svg>
+              </div>
+              <span class="px-2.5 py-1 text-xs font-semibold text-brand-600 bg-brand-50 rounded-full shrink-0">Tư vấn
+                viên</span>
+            </div>
+            <p class="text-slate-600 text-[15px] leading-relaxed italic mb-6">
+              "Mình vào nhóm từ 2024, nếu chỉ lấy mức thấp nhất mỗi tháng 1 deal thì đến nay mình đã ký được ít nhất 24
+              lượt KH từ nhóm rồi - toàn bộ đều là HĐ Nhân thọ của Sun Life, không chỉ HCM - nơi mình sống, mà cả ở HN
+              và rất nhiều tỉnh thành khác. Tụi mình thậm chí còn chưa từng gặp mặt nhau dù đã qua năm thứ 2 của HĐ. Có
+              tâm hay không, nghiệp vụ cao hay không, kiến thức đầy đủ and quan sát khách quan hay không, từng comment -
+              từng thể hiện của bạn thì KH đều thấy hết. Đừng ngại trao đi, hãy tin rằng không nỗ lực nào của mình là vô
+              nghĩa."
+            </p>
+          </div>
+          <div>
+            <div class="flex items-center gap-3 pt-4 border-t border-slate-100">
+              <img class="w-12 h-12 rounded-full object-cover shadow-sm border-2 border-brand-100"
+                src="assets/tvv/sun_minhthao.jpg" alt="Nguyễn Minh Thảo" loading="lazy" />
+              <div>
+                <p class="text-sm font-bold text-navy-800">Nguyễn Minh Thảo</p>
+                <p class="text-xs text-slate-400 font-medium">MDRT 2026</p>
+              </div>
+            </div>
+            <div
+              class="mt-3.5 bg-slate-50 rounded-xl p-3 border border-slate-100 text-[11px] text-slate-500 leading-normal">
+              <strong class="text-slate-700">Chi tiết:</strong> Nguyễn Minh Thảo - MDRT 2026, thường xuyên đạt TOP TVTC
+              có doanh thu cao nhất toàn quốc của Sunlife Việt Nam và đạt các chương trình tưởng thưởng của công ty.
+            </div>
+          </div>
+        </div>
+
+        <!-- TVV Feedback 7: Tuyết Sương -->
+        <div data-category="tvv"
+          class="feedback-card inline-block w-full mb-8 bg-white rounded-2xl p-6 sm:p-8 border border-navy-100/60 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300 break-inside-avoid cursor-default">
+          <div>
+            <div class="flex items-center justify-between gap-2 mb-4">
+              <div class="flex items-center gap-0.5 text-amber-400">
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                  <path
+                    d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                </svg>
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                  <path
+                    d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                </svg>
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                  <path
+                    d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                </svg>
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                  <path
+                    d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                </svg>
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                  <path
+                    d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                </svg>
+              </div>
+              <span class="px-2.5 py-1 text-xs font-semibold text-brand-600 bg-brand-50 rounded-full shrink-0">Tư vấn
+                viên</span>
+            </div>
+            <p class="text-slate-600 text-[15px] leading-relaxed italic mb-6">
+              "Mình có đăng bài và hỗ trợ 1 số khách hàng lạ inbox hỗ trợ review hợp đồng và làm yêu cầu bồi thường.
+              Mình cũng có duyên được tư vấn và ký Hợp đồng với Khách hàng tại Group, đặc biệt là mình ở HCM nhưng nhờ
+              group mà được kết nối thêm với các bạn Khách hàng ở miền Bắc. Hiện diện thường xuyên + bài viết/bình luận
+              tâm huyết, tích cực + thông tin chia sẻ có giá trị sẽ được Khách hàng biết đến & lựa chọn."
+            </p>
+          </div>
+          <div>
+            <div class="flex items-center gap-3 pt-4 border-t border-slate-100">
+              <img class="w-12 h-12 rounded-full object-cover shadow-sm border-2 border-brand-100"
+                src="assets/tvv/man_tuyetsuong.jpg" alt="Tuyết Sương" loading="lazy" />
+              <div>
+                <p class="text-sm font-bold text-navy-800">Tuyết Sương</p>
+                <p class="text-xs text-slate-400 font-medium">Trưởng phòng kinh doanh cấp cao</p>
+              </div>
+            </div>
+            <div
+              class="mt-3.5 bg-slate-50 rounded-xl p-3 border border-slate-100 text-[11px] text-slate-500 leading-normal">
+              <strong class="text-slate-700">Chi tiết:</strong> Trưởng phòng kinh doanh cấp cao - Pro Bạch Kim FC -
+              MDRT- MBA Manulife Việt Nam với 8 năm trong nghề.
+            </div>
+          </div>
+        </div>
+
+        <!-- TVV Feedback 8: Nguyễn Thanh Thúy -->
+        <div data-category="tvv"
+          class="feedback-card inline-block w-full mb-8 bg-white rounded-2xl p-6 sm:p-8 border border-navy-100/60 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300 break-inside-avoid cursor-default">
+          <div>
+            <div class="flex items-center justify-between gap-2 mb-4">
+              <div class="flex items-center gap-0.5 text-amber-400">
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                  <path
+                    d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                </svg>
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                  <path
+                    d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                </svg>
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                  <path
+                    d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                </svg>
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                  <path
+                    d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                </svg>
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                  <path
+                    d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                </svg>
+              </div>
+              <span class="px-2.5 py-1 text-xs font-semibold text-brand-600 bg-brand-50 rounded-full shrink-0">Tư vấn viên</span>
+            </div>
+            <p class="text-slate-600 text-[15px] leading-relaxed italic mb-6">
+              "Mình biết group từ 2021 và cũng có số lượng khách kha khá từ đây kể cả những bộ hồ sơ khó nhằn nhất .Đến bây giờ thấy gr phát triển chất lượng cả về khách hàng lẫn tvv cảm ơn bộ phận AD nhiều nhé "
+            </p>
+          </div>
+          <div>
+            <div class="flex items-center gap-3 pt-4 border-t border-slate-100">
+              <img class="w-12 h-12 rounded-full object-cover shadow-sm border-2 border-brand-100" 
+                src="assets/tvv/gen_thanhthuy.jpg" alt="Nguyễn Thanh Thúy" loading="lazy" />
+              <div>
+                <p class="text-sm font-bold text-navy-800">Nguyễn Thanh Thúy</p>
+                <p class="text-xs text-slate-400 font-medium">Gencasa Như Quỳnh</p>
+              </div>
+            </div>
+            <div class="mt-3.5 bg-slate-50 rounded-xl p-3 border border-slate-100 text-[11px] text-slate-500 leading-normal">
+              <strong class="text-slate-700">Chi tiết:</strong> Gencasa Như Quỳnh MDRT 5 năm bền vững liên tiếp.
+            </div>
+          </div>
+        </div>
+
       </div>
 
       <!-- Video Feedback -->
@@ -959,7 +1471,7 @@
         <div
           class="leader-card bg-white rounded-2xl p-8 border border-navy-100/60 text-center flex flex-col items-center">
           <img class="w-20 h-20 rounded-full object-cover shadow-md border border-navy-200"
-            src="assets/doanvietcong.jpg" alt="Đoàn Việt Công" loading="lazy" />
+            src="assets/doanvietcong.png" alt="Đoàn Việt Công" loading="lazy" />
           <h3 class="mt-5 text-xl font-bold text-navy-800">Đoàn Việt Công</h3>
           <span
             class="inline-block mt-1 px-3 py-0.5 text-xs font-semibold text-brand-600 bg-brand-50 rounded-full">Founder</span>
@@ -995,7 +1507,7 @@
 
         <div
           class="leader-card bg-white rounded-2xl p-8 border border-navy-100/60 text-center flex flex-col items-center">
-          <img class="w-20 h-20 rounded-full object-cover shadow-md border border-navy-200" src="assets/thuynguyen.jpg"
+          <img class="w-20 h-20 rounded-full object-cover shadow-md border border-navy-200" src="assets/thuynguyen.png"
             alt="Ad Thuy Nguyen" loading="lazy" />
           <h3 class="mt-5 text-xl font-bold text-navy-800">Ad Thuy Nguyen</h3>
           <span
@@ -1288,6 +1800,32 @@
         var rect = el.getBoundingClientRect();
         if (rect.top < window.innerHeight + 100) {
           el.classList.add('visible');
+        }
+      });
+    }
+
+    function filterFeedback(category) {
+      const btnAll = document.getElementById('btn-feedback-all');
+      const btnKh = document.getElementById('btn-feedback-khachhang');
+      const btnTvv = document.getElementById('btn-feedback-tvv');
+
+      const activeClass = "px-6 py-2.5 text-sm font-semibold rounded-full bg-brand-500 text-white shadow-md shadow-brand-500/20 hover:shadow-lg transition-all duration-200 cursor-pointer";
+      const inactiveClass = "px-6 py-2.5 text-sm font-semibold rounded-full bg-white text-slate-600 hover:bg-brand-50 hover:text-brand-600 border border-slate-200 shadow-sm transition-all duration-200 cursor-pointer";
+
+      [btnAll, btnKh, btnTvv].forEach(btn => {
+        if (btn) btn.className = inactiveClass;
+      });
+
+      const activeBtn = document.getElementById('btn-feedback-' + category);
+      if (activeBtn) activeBtn.className = activeClass;
+
+      const cards = document.querySelectorAll('.feedback-card');
+      cards.forEach(card => {
+        if (category === 'all' || card.getAttribute('data-category') === category) {
+          card.classList.remove('hidden');
+          card.classList.add('visible');
+        } else {
+          card.classList.add('hidden');
         }
       });
     }
