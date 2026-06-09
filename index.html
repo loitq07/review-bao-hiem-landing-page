@@ -1,17 +1,22 @@
 <!DOCTYPE html>
 <html lang="vi">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Review Bảo Hiểm – Cộng Đồng Minh Bạch, Nâng Tầm Tư Vấn 2026</title>
-  <meta name="description" content="Cộng đồng Review Bảo Hiểm - Nền tảng độc lập, minh bạch giúp khách hàng tìm hiểu và so sánh giải pháp bảo hiểm từ nhiều công ty, nhiều tư vấn viên." />
+  <meta name="description"
+    content="Cộng đồng Review Bảo Hiểm - Nền tảng độc lập, minh bạch giúp khách hàng tìm hiểu và so sánh giải pháp bảo hiểm từ nhiều công ty, nhiều tư vấn viên." />
   <meta property="og:title" content="Review Bảo Hiểm – Cộng Đồng Minh Bạch, Nâng Tầm Tư Vấn 2026" />
-  <meta property="og:description" content="Cộng đồng Review Bảo Hiểm - Nền tảng độc lập, minh bạch giúp khách hàng tìm hiểu và so sánh giải pháp bảo hiểm từ nhiều công ty, nhiều tư vấn viên." />
+  <meta property="og:description"
+    content="Cộng đồng Review Bảo Hiểm - Nền tảng độc lập, minh bạch giúp khách hàng tìm hiểu và so sánh giải pháp bảo hiểm từ nhiều công ty, nhiều tư vấn viên." />
   <meta property="og:image" content="assets/og_image.jpg" />
+  <meta property="og:url" content="https://reviewbaohiem.group/" />
   <meta property="og:type" content="website" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -29,22 +34,66 @@
     }
   </script>
   <style>
-    html { scroll-behavior: smooth; }
-    @media (prefers-reduced-motion: reduce) {
-      html { scroll-behavior: auto; }
-      *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
-      .fade-in { opacity: 1; transform: none; }
+    html {
+      scroll-behavior: smooth;
     }
-    .stat-card:hover .stat-number { transform: scale(1.05); }
-    .stat-number { transition: transform 200ms ease; }
-    .tier-card { transition: box-shadow 200ms ease, transform 200ms ease; }
-    .tier-card:hover { box-shadow: 0 20px 40px rgba(21,101,166,0.15); transform: translateY(-4px); }
-    .leader-card { transition: box-shadow 200ms ease; }
-    .leader-card:hover { box-shadow: 0 12px 32px rgba(21,101,166,0.1); }
-    .fade-in { opacity: 0; transform: translateY(20px); transition: opacity 0.6s ease, transform 0.6s ease; }
-    .fade-in.visible { opacity: 1; transform: translateY(0); }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      *,
+      *::before,
+      *::after {
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+      }
+
+      .fade-in {
+        opacity: 1;
+        transform: none;
+      }
+    }
+
+    .stat-card:hover .stat-number {
+      transform: scale(1.05);
+    }
+
+    .stat-number {
+      transition: transform 200ms ease;
+    }
+
+    .tier-card {
+      transition: box-shadow 200ms ease, transform 200ms ease;
+    }
+
+    .tier-card:hover {
+      box-shadow: 0 20px 40px rgba(21, 101, 166, 0.15);
+      transform: translateY(-4px);
+    }
+
+    .leader-card {
+      transition: box-shadow 200ms ease;
+    }
+
+    .leader-card:hover {
+      box-shadow: 0 12px 32px rgba(21, 101, 166, 0.1);
+    }
+
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
   </style>
 </head>
+
 <body class="bg-surface-light font-sans text-slate-800 antialiased">
 
   <!-- Navbar -->
@@ -53,27 +102,49 @@
       <div class="flex items-center justify-between h-16 sm:h-18">
         <a href="#hero" class="flex items-center gap-2 cursor-pointer group">
           <div class="w-9 h-9 rounded-lg bg-navy-500 flex items-center justify-center">
-            <svg class="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" /></svg>
+            <svg class="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+            </svg>
           </div>
-          <span class="text-lg font-bold text-navy-700 group-hover:text-navy-500 transition-colors duration-200">Review Bảo Hiểm</span>
+          <span class="text-lg font-bold text-navy-700 group-hover:text-navy-500 transition-colors duration-200">Review
+            Bảo Hiểm</span>
         </a>
 
         <div class="hidden md:flex items-center gap-1">
-          <a href="#packages" class="px-3 py-2 text-sm font-medium text-slate-600 hover:text-brand-500 rounded-lg hover:bg-brand-50 transition-colors duration-200 cursor-pointer">Ghi danh</a>
-          <a href="#feedback" class="px-3 py-2 text-sm font-medium text-slate-600 hover:text-brand-500 rounded-lg hover:bg-brand-50 transition-colors duration-200 cursor-pointer">Feedback</a>
-          <a href="#about" class="px-3 py-2 text-sm font-medium text-slate-600 hover:text-brand-500 rounded-lg hover:bg-brand-50 transition-colors duration-200 cursor-pointer">Giới thiệu</a>
-          <a href="#tiers" class="px-3 py-2 text-sm font-medium text-slate-600 hover:text-brand-500 rounded-lg hover:bg-brand-50 transition-colors duration-200 cursor-pointer">Hạng tư vấn</a>
-          <a href="#team" class="px-3 py-2 text-sm font-medium text-slate-600 hover:text-brand-500 rounded-lg hover:bg-brand-50 transition-colors duration-200 cursor-pointer">Ban quản trị</a>
-          <a href="#rules" class="px-3 py-2 text-sm font-medium text-slate-600 hover:text-brand-500 rounded-lg hover:bg-brand-50 transition-colors duration-200 cursor-pointer">Quy tắc</a>
+          <a href="#packages"
+            class="px-3 py-2 text-sm font-medium text-slate-600 hover:text-brand-500 rounded-lg hover:bg-brand-50 transition-colors duration-200 cursor-pointer">Ghi
+            danh</a>
+          <a href="#feedback"
+            class="px-3 py-2 text-sm font-medium text-slate-600 hover:text-brand-500 rounded-lg hover:bg-brand-50 transition-colors duration-200 cursor-pointer">Feedback</a>
+          <a href="#about"
+            class="px-3 py-2 text-sm font-medium text-slate-600 hover:text-brand-500 rounded-lg hover:bg-brand-50 transition-colors duration-200 cursor-pointer">Giới
+            thiệu</a>
+          <a href="#tiers"
+            class="px-3 py-2 text-sm font-medium text-slate-600 hover:text-brand-500 rounded-lg hover:bg-brand-50 transition-colors duration-200 cursor-pointer">Hạng
+            tư vấn</a>
+          <a href="#team"
+            class="px-3 py-2 text-sm font-medium text-slate-600 hover:text-brand-500 rounded-lg hover:bg-brand-50 transition-colors duration-200 cursor-pointer">Ban
+            quản trị</a>
+          <a href="#rules"
+            class="px-3 py-2 text-sm font-medium text-slate-600 hover:text-brand-500 rounded-lg hover:bg-brand-50 transition-colors duration-200 cursor-pointer">Quy
+            tắc</a>
         </div>
 
         <div class="flex items-center gap-3">
-          <a href="#packages" class="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 bg-brand-500 hover:bg-brand-600 text-white text-sm font-semibold rounded-xl shadow-md shadow-brand-500/20 hover:shadow-lg hover:shadow-brand-500/30 transition-all duration-200 cursor-pointer">
+          <a href="#packages"
+            class="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 bg-brand-500 hover:bg-brand-600 text-white text-sm font-semibold rounded-xl shadow-md shadow-brand-500/20 hover:shadow-lg hover:shadow-brand-500/30 transition-all duration-200 cursor-pointer">
             Ghi danh 2026
-            <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" /></svg>
+            <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+            </svg>
           </a>
-          <button id="mobileMenuBtn" class="md:hidden p-2 rounded-lg hover:bg-brand-50 transition-colors duration-200 cursor-pointer" aria-label="Mở menu">
-            <svg class="w-6 h-6 text-slate-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" /></svg>
+          <button id="mobileMenuBtn"
+            class="md:hidden p-2 rounded-lg hover:bg-brand-50 transition-colors duration-200 cursor-pointer"
+            aria-label="Mở menu">
+            <svg class="w-6 h-6 text-slate-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
           </button>
         </div>
       </div>
@@ -81,12 +152,23 @@
 
     <div id="mobileMenu" class="hidden md:hidden border-t border-navy-100/60 bg-white">
       <div class="px-4 py-3 space-y-1">
-        <a href="#packages" class="block px-3 py-2 text-sm font-medium text-slate-600 hover:text-brand-500 rounded-lg hover:bg-brand-50 transition-colors duration-200 cursor-pointer">Ghi danh 2026</a>
-        <a href="#feedback" class="block px-3 py-2 text-sm font-medium text-slate-600 hover:text-brand-500 rounded-lg hover:bg-brand-50 transition-colors duration-200 cursor-pointer">Feedback</a>
-        <a href="#about" class="block px-3 py-2 text-sm font-medium text-slate-600 hover:text-brand-500 rounded-lg hover:bg-brand-50 transition-colors duration-200 cursor-pointer">Giới thiệu</a>
-        <a href="#tiers" class="block px-3 py-2 text-sm font-medium text-slate-600 hover:text-brand-500 rounded-lg hover:bg-brand-50 transition-colors duration-200 cursor-pointer">Hạng tư vấn</a>
-        <a href="#team" class="block px-3 py-2 text-sm font-medium text-slate-600 hover:text-brand-500 rounded-lg hover:bg-brand-50 transition-colors duration-200 cursor-pointer">Ban quản trị</a>
-        <a href="#rules" class="block px-3 py-2 text-sm font-medium text-slate-600 hover:text-brand-500 rounded-lg hover:bg-brand-50 transition-colors duration-200 cursor-pointer">Quy tắc</a>
+        <a href="#packages"
+          class="block px-3 py-2 text-sm font-medium text-slate-600 hover:text-brand-500 rounded-lg hover:bg-brand-50 transition-colors duration-200 cursor-pointer">Ghi
+          danh 2026</a>
+        <a href="#feedback"
+          class="block px-3 py-2 text-sm font-medium text-slate-600 hover:text-brand-500 rounded-lg hover:bg-brand-50 transition-colors duration-200 cursor-pointer">Feedback</a>
+        <a href="#about"
+          class="block px-3 py-2 text-sm font-medium text-slate-600 hover:text-brand-500 rounded-lg hover:bg-brand-50 transition-colors duration-200 cursor-pointer">Giới
+          thiệu</a>
+        <a href="#tiers"
+          class="block px-3 py-2 text-sm font-medium text-slate-600 hover:text-brand-500 rounded-lg hover:bg-brand-50 transition-colors duration-200 cursor-pointer">Hạng
+          tư vấn</a>
+        <a href="#team"
+          class="block px-3 py-2 text-sm font-medium text-slate-600 hover:text-brand-500 rounded-lg hover:bg-brand-50 transition-colors duration-200 cursor-pointer">Ban
+          quản trị</a>
+        <a href="#rules"
+          class="block px-3 py-2 text-sm font-medium text-slate-600 hover:text-brand-500 rounded-lg hover:bg-brand-50 transition-colors duration-200 cursor-pointer">Quy
+          tắc</a>
       </div>
     </div>
   </nav>
@@ -99,18 +181,25 @@
         <source src="assets/8102897-hd_1920_1080_25fps.webm" type="video/webm" />
       </video>
       <!-- Overlay to ensure text readability -->
-      <div class="absolute inset-0 bg-gradient-to-br from-navy-900/85 via-navy-800/80 to-navy-950/90 mix-blend-multiply"></div>
+      <div
+        class="absolute inset-0 bg-gradient-to-br from-navy-900/85 via-navy-800/80 to-navy-950/90 mix-blend-multiply">
+      </div>
     </div>
 
     <!-- Decorative Blurs -->
     <div class="absolute inset-0 z-0 pointer-events-none">
-      <div class="absolute top-0 right-0 w-96 h-96 bg-brand-500/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/3"></div>
-      <div class="absolute bottom-0 left-0 w-80 h-80 bg-brand-500/10 rounded-full blur-3xl translate-y-1/3 -translate-x-1/4"></div>
+      <div
+        class="absolute top-0 right-0 w-96 h-96 bg-brand-500/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/3">
+      </div>
+      <div
+        class="absolute bottom-0 left-0 w-80 h-80 bg-brand-500/10 rounded-full blur-3xl translate-y-1/3 -translate-x-1/4">
+      </div>
     </div>
 
     <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center max-w-4xl mx-auto">
-        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-sm border border-white/15 text-white/90 text-sm font-medium mb-6">
+        <div
+          class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-sm border border-white/15 text-white/90 text-sm font-medium mb-6">
           <span class="w-2 h-2 rounded-full bg-brand-400 animate-pulse"></span>
           Cập nhật tháng 05/2026
         </div>
@@ -122,17 +211,24 @@
           Cộng Đồng Minh Bạch – Nâng Tầm Tư Vấn 2026
         </p>
         <p class="mt-6 text-lg text-white/75 max-w-2xl mx-auto leading-relaxed">
-          Nền tảng độc lập giúp khách hàng ẩn danh tìm hiểu, so sánh giải pháp bảo hiểm từ nhiều công ty và tư vấn viên. Khách quan, đồng hành cùng khách hàng.
+          Nền tảng độc lập giúp khách hàng ẩn danh tìm hiểu, so sánh giải pháp bảo hiểm từ nhiều công ty và tư vấn viên.
+          Khách quan, đồng hành cùng khách hàng.
         </p>
 
         <div class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
-          <a href="#packages" class="inline-flex items-center gap-2 px-8 py-3.5 bg-brand-500 hover:bg-brand-600 text-white text-base font-semibold rounded-xl shadow-lg shadow-brand-500/30 hover:shadow-xl hover:shadow-brand-500/40 transition-all duration-200 cursor-pointer">
+          <a href="#packages"
+            class="inline-flex items-center gap-2 px-8 py-3.5 bg-brand-500 hover:bg-brand-600 text-white text-base font-semibold rounded-xl shadow-lg shadow-brand-500/30 hover:shadow-xl hover:shadow-brand-500/40 transition-all duration-200 cursor-pointer">
             Ghi danh tư vấn viên 2026
-            <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" /></svg>
+            <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+            </svg>
           </a>
-          <a href="#about" class="inline-flex items-center gap-2 px-8 py-3.5 bg-white/10 hover:bg-white/20 backdrop-blur-sm text-white text-base font-semibold rounded-xl border border-white/20 transition-all duration-200 cursor-pointer">
+          <a href="#about"
+            class="inline-flex items-center gap-2 px-8 py-3.5 bg-white/10 hover:bg-white/20 backdrop-blur-sm text-white text-base font-semibold rounded-xl border border-white/20 transition-all duration-200 cursor-pointer">
             Tìm hiểu thêm
-            <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg>
+            <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+            </svg>
           </a>
         </div>
       </div>
@@ -163,9 +259,13 @@
   <section id="packages" class="py-16 sm:py-24 bg-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center fade-in">
-        <span class="inline-block px-3 py-1 text-xs font-semibold uppercase tracking-wider text-brand-600 bg-brand-50 rounded-full">Ghi danh năm 2026</span>
+        <span
+          class="inline-block px-3 py-1 text-xs font-semibold uppercase tracking-wider text-brand-600 bg-brand-50 rounded-full">Ghi
+          danh năm 2026</span>
         <h2 class="mt-4 text-3xl sm:text-4xl font-bold text-navy-800">Chọn gói ghi danh phù hợp</h2>
-        <p class="mt-4 text-lg text-slate-500 max-w-2xl mx-auto">Không ghi danh: <strong class="text-red-500">KHÔNG</strong> được bán hàng dưới mọi hình thức. Ghi danh ngay để tiếp cận hàng trăm khách hàng tiềm năng mỗi tháng.</p>
+        <p class="mt-4 text-lg text-slate-500 max-w-2xl mx-auto">Không ghi danh: <strong
+            class="text-red-500">KHÔNG</strong> được bán hàng dưới mọi hình thức. Ghi danh ngay để tiếp cận hàng trăm
+          khách hàng tiềm năng mỗi tháng.</p>
       </div>
 
       <div class="mt-12 grid md:grid-cols-3 gap-8 fade-in">
@@ -174,7 +274,10 @@
         <div class="tier-card bg-white rounded-2xl border-2 border-slate-200 p-8 flex flex-col cursor-default">
           <div class="flex items-center gap-3 mb-2">
             <div class="w-10 h-10 rounded-full bg-navy-100 flex items-center justify-center">
-              <svg class="w-5 h-5 text-navy-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" /></svg>
+              <svg class="w-5 h-5 text-navy-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+              </svg>
             </div>
             <div>
               <h3 class="text-lg font-bold text-navy-800">Phổ Thông</h3>
@@ -206,27 +309,40 @@
             <p class="text-xs font-semibold text-navy-700 uppercase tracking-wider mb-3">Quyền lợi</p>
             <ul class="space-y-2.5">
               <li class="flex items-start gap-2 text-sm text-slate-600">
-                <svg class="w-5 h-5 text-navy-500 shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
+                <svg class="w-5 h-5 text-navy-500 shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                  stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                </svg>
                 Tối đa 8 bài bán hàng/tháng
               </li>
               <li class="flex items-start gap-2 text-sm text-slate-600">
-                <svg class="w-5 h-5 text-navy-500 shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
+                <svg class="w-5 h-5 text-navy-500 shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                  stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                </svg>
                 150 bình luận tư vấn/tháng
               </li>
             </ul>
           </div>
 
-          <a href="https://forms.gle/2RcX3WZk2j1vQibK6" target="_blank" rel="noopener noreferrer" class="mt-6 block w-full text-center px-6 py-3 bg-navy-500 hover:bg-navy-600 text-white font-semibold rounded-xl transition-colors duration-200 cursor-pointer">
+          <a href="https://forms.gle/2RcX3WZk2j1vQibK6" target="_blank" rel="noopener noreferrer"
+            class="mt-6 block w-full text-center px-6 py-3 bg-navy-500 hover:bg-navy-600 text-white font-semibold rounded-xl transition-colors duration-200 cursor-pointer">
             Đăng ký Phổ Thông
           </a>
         </div>
 
         <!-- Package 2: Premium (Highlighted) -->
-        <div class="tier-card relative bg-white rounded-2xl border-2 border-brand-400 p-8 shadow-xl shadow-brand-100/50 flex flex-col cursor-default">
-          <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 px-4 py-1 bg-brand-500 text-white text-xs font-bold rounded-full uppercase tracking-wider">Phổ biến nhất</div>
+        <div
+          class="tier-card relative bg-white rounded-2xl border-2 border-brand-400 p-8 shadow-xl shadow-brand-100/50 flex flex-col cursor-default">
+          <div
+            class="absolute -top-3.5 left-1/2 -translate-x-1/2 px-4 py-1 bg-brand-500 text-white text-xs font-bold rounded-full uppercase tracking-wider">
+            Phổ biến nhất</div>
           <div class="flex items-center gap-3 mb-2">
             <div class="w-10 h-10 rounded-full bg-brand-100 flex items-center justify-center">
-              <svg class="w-5 h-5 text-brand-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
+              <svg class="w-5 h-5 text-brand-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+              </svg>
             </div>
             <div>
               <h3 class="text-lg font-bold text-navy-800">Cao Cấp</h3>
@@ -254,38 +370,58 @@
             <p class="text-xs font-semibold text-navy-700 uppercase tracking-wider mb-3">Quyền lợi</p>
             <ul class="space-y-2.5">
               <li class="flex items-start gap-2 text-sm text-slate-600">
-                <svg class="w-5 h-5 text-brand-500 shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
+                <svg class="w-5 h-5 text-brand-500 shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                </svg>
                 <strong>Không giới hạn</strong> bài đăng và bình luận
               </li>
               <li class="flex items-start gap-2 text-sm text-slate-600">
-                <svg class="w-5 h-5 text-brand-500 shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
+                <svg class="w-5 h-5 text-brand-500 shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                </svg>
                 Giới thiệu quản lý (manager)
               </li>
               <li class="flex items-start gap-2 text-sm text-slate-600">
-                <svg class="w-5 h-5 text-brand-500 shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
+                <svg class="w-5 h-5 text-brand-500 shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                </svg>
                 2 bài PR (gói 1 năm)
               </li>
               <li class="flex items-start gap-2 text-sm text-slate-600">
-                <svg class="w-5 h-5 text-brand-500 shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
+                <svg class="w-5 h-5 text-brand-500 shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                </svg>
                 Voucher café (gói 6 tháng+)
               </li>
               <li class="flex items-start gap-2 text-sm text-slate-600">
-                <svg class="w-5 h-5 text-brand-500 shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
+                <svg class="w-5 h-5 text-brand-500 shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                </svg>
                 Hỗ trợ tư vấn bồi thường bảo hiểm
               </li>
             </ul>
           </div>
 
-          <a href="https://forms.gle/2RcX3WZk2j1vQibK6" target="_blank" rel="noopener noreferrer" class="mt-6 block w-full text-center px-6 py-3 bg-brand-500 hover:bg-brand-600 text-white font-semibold rounded-xl shadow-md shadow-brand-500/20 transition-all duration-200 cursor-pointer">
+          <a href="https://forms.gle/2RcX3WZk2j1vQibK6" target="_blank" rel="noopener noreferrer"
+            class="mt-6 block w-full text-center px-6 py-3 bg-brand-500 hover:bg-brand-600 text-white font-semibold rounded-xl shadow-md shadow-brand-500/20 transition-all duration-200 cursor-pointer">
             Đăng ký Cao Cấp
           </a>
         </div>
 
         <!-- Package 3: VIP -->
-        <div class="tier-card bg-gradient-to-br from-navy-700 to-navy-900 rounded-2xl p-8 text-white flex flex-col cursor-default">
+        <div
+          class="tier-card bg-gradient-to-br from-navy-700 to-navy-900 rounded-2xl p-8 text-white flex flex-col cursor-default">
           <div class="flex items-center gap-3 mb-2">
             <div class="w-10 h-10 rounded-full bg-white/15 flex items-center justify-center">
-              <svg class="w-5 h-5 text-brand-300" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" /></svg>
+              <svg class="w-5 h-5 text-brand-300" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+              </svg>
             </div>
             <div>
               <h3 class="text-lg font-bold text-white">VIP</h3>
@@ -296,13 +432,18 @@
 
           <div class="flex-1 flex items-center justify-center py-8">
             <div class="text-center">
-              <svg class="w-16 h-16 mx-auto text-brand-400/40" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1"><path stroke-linecap="round" stroke-linejoin="round" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" /></svg>
+              <svg class="w-16 h-16 mx-auto text-brand-400/40" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                stroke-width="1">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+              </svg>
               <p class="mt-4 text-lg font-semibold text-white/80">Liên hệ để thương lượng</p>
               <p class="mt-1 text-sm text-white/50">Giá & quyền lợi tùy chỉnh</p>
             </div>
           </div>
 
-          <a href="https://forms.gle/2RcX3WZk2j1vQibK6" target="_blank" rel="noopener noreferrer" class="mt-auto block w-full text-center px-6 py-3 bg-white/15 hover:bg-white/25 text-white font-semibold rounded-xl border border-white/20 transition-colors duration-200 cursor-pointer">
+          <a href="https://forms.gle/2RcX3WZk2j1vQibK6" target="_blank" rel="noopener noreferrer"
+            class="mt-auto block w-full text-center px-6 py-3 bg-white/15 hover:bg-white/25 text-white font-semibold rounded-xl border border-white/20 transition-colors duration-200 cursor-pointer">
             Liên hệ BQT
           </a>
         </div>
@@ -312,25 +453,42 @@
       <div class="mt-12 max-w-3xl mx-auto fade-in">
         <div class="bg-navy-50 rounded-2xl p-6 sm:p-8 border border-navy-100">
           <h4 class="text-base font-bold text-navy-800 mb-4 flex items-center gap-2">
-            <svg class="w-5 h-5 text-navy-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+            <svg class="w-5 h-5 text-navy-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
             Lưu ý quan trọng
           </h4>
           <ul class="space-y-2.5">
             <li class="flex items-start gap-2.5 text-sm text-slate-600">
-              <svg class="w-4 h-4 text-navy-400 shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" /></svg>
+              <svg class="w-4 h-4 text-navy-400 shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+              </svg>
               Mọi hoạt động bán hàng và liên hệ khách hàng từ group đều cần ghi danh hợp lệ.
             </li>
             <li class="flex items-start gap-2.5 text-sm text-slate-600">
-              <svg class="w-4 h-4 text-navy-400 shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" /></svg>
+              <svg class="w-4 h-4 text-navy-400 shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+              </svg>
               Vi phạm: cảnh cáo, hạn chế đăng bài, hoặc loại khỏi group.
             </li>
             <li class="flex items-start gap-2.5 text-sm text-slate-600">
-              <svg class="w-4 h-4 text-navy-400 shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" /></svg>
+              <svg class="w-4 h-4 text-navy-400 shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+              </svg>
               Chỉ chấp nhận sản phẩm bảo hiểm nhân thọ; không nhận thẻ bảo hiểm riêng lẻ hoặc sản phẩm phi bảo hiểm.
             </li>
             <li class="flex items-start gap-2.5 text-sm text-slate-600">
-              <svg class="w-4 h-4 text-red-400 shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" /></svg>
-              <span class="text-red-600 font-medium">Phí không hoàn lại trong mọi trường hợp</span> (tự ngừng, vi phạm, hoặc kết quả không như mong muốn).
+              <svg class="w-4 h-4 text-red-400 shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+              </svg>
+              <span class="text-red-600 font-medium">Phí không hoàn lại trong mọi trường hợp</span> (tự ngừng, vi phạm,
+              hoặc kết quả không như mong muốn).
             </li>
           </ul>
         </div>
@@ -342,24 +500,41 @@
   <section id="feedback" class="py-16 sm:py-24 bg-gradient-to-b from-navy-50 to-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center fade-in">
-        <span class="inline-block px-3 py-1 text-xs font-semibold uppercase tracking-wider text-brand-600 bg-brand-50 rounded-full">Feedback tư vấn viên</span>
+        <span
+          class="inline-block px-3 py-1 text-xs font-semibold uppercase tracking-wider text-brand-600 bg-brand-50 rounded-full">Feedback
+          tư vấn viên</span>
         <h2 class="mt-4 text-3xl sm:text-4xl font-bold text-navy-800">Tư vấn viên nói gì về chúng tôi?</h2>
-        <p class="mt-4 text-lg text-slate-500 max-w-2xl mx-auto">Khách quan – Đồng hành cùng Khách hàng và Tư vấn viên</p>
+        <p class="mt-4 text-lg text-slate-500 max-w-2xl mx-auto">Khách quan – Đồng hành cùng Khách hàng và Tư vấn viên
+        </p>
       </div>
 
       <div class="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-8 fade-in">
         <!-- Feedback card 1 -->
-        <div class="bg-white rounded-2xl p-8 border border-navy-100/60 shadow-sm hover:shadow-md transition-shadow duration-200">
+        <div
+          class="bg-white rounded-2xl p-8 border border-navy-100/60 shadow-sm hover:shadow-md transition-shadow duration-200">
           <div class="flex items-center gap-1 mb-4">
-            <svg class="w-5 h-5 text-brand-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-            <svg class="w-5 h-5 text-brand-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-            <svg class="w-5 h-5 text-brand-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-            <svg class="w-5 h-5 text-brand-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-            <svg class="w-5 h-5 text-brand-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg class="w-5 h-5 text-brand-400" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+            </svg>
+            <svg class="w-5 h-5 text-brand-400" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+            </svg>
+            <svg class="w-5 h-5 text-brand-400" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+            </svg>
+            <svg class="w-5 h-5 text-brand-400" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+            </svg>
+            <svg class="w-5 h-5 text-brand-400" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+            </svg>
           </div>
-          <p class="text-slate-600 leading-relaxed italic">"Group giúp mình tiếp cận được rất nhiều khách hàng thực sự có nhu cầu. Quy trình minh bạch, BQT hỗ trợ nhiệt tình."</p>
+          <p class="text-slate-600 leading-relaxed italic">"Group giúp mình tiếp cận được rất nhiều khách hàng thực sự
+            có nhu cầu. Quy trình minh bạch, BQT hỗ trợ nhiệt tình."</p>
           <div class="mt-6 flex items-center gap-3">
-            <div class="w-10 h-10 rounded-full bg-navy-100 flex items-center justify-center text-navy-600 font-bold text-sm">TV</div>
+            <div
+              class="w-10 h-10 rounded-full bg-navy-100 flex items-center justify-center text-navy-600 font-bold text-sm">
+              TV</div>
             <div>
               <p class="text-sm font-semibold text-navy-800">Tư vấn viên ghi danh</p>
               <p class="text-xs text-slate-400">Gói Cao Cấp – 1 năm</p>
@@ -368,17 +543,31 @@
         </div>
 
         <!-- Feedback card 2 -->
-        <div class="bg-white rounded-2xl p-8 border border-navy-100/60 shadow-sm hover:shadow-md transition-shadow duration-200">
+        <div
+          class="bg-white rounded-2xl p-8 border border-navy-100/60 shadow-sm hover:shadow-md transition-shadow duration-200">
           <div class="flex items-center gap-1 mb-4">
-            <svg class="w-5 h-5 text-brand-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-            <svg class="w-5 h-5 text-brand-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-            <svg class="w-5 h-5 text-brand-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-            <svg class="w-5 h-5 text-brand-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-            <svg class="w-5 h-5 text-brand-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg class="w-5 h-5 text-brand-400" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+            </svg>
+            <svg class="w-5 h-5 text-brand-400" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+            </svg>
+            <svg class="w-5 h-5 text-brand-400" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+            </svg>
+            <svg class="w-5 h-5 text-brand-400" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+            </svg>
+            <svg class="w-5 h-5 text-brand-400" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+            </svg>
           </div>
-          <p class="text-slate-600 leading-relaxed italic">"Trước đây mình hay bị khách hàng e ngại khi tư vấn online. Nhờ huy hiệu ghi danh trong group, khách hàng tin tưởng hơn rất nhiều."</p>
+          <p class="text-slate-600 leading-relaxed italic">"Trước đây mình hay bị khách hàng e ngại khi tư vấn online.
+            Nhờ huy hiệu ghi danh trong group, khách hàng tin tưởng hơn rất nhiều."</p>
           <div class="mt-6 flex items-center gap-3">
-            <div class="w-10 h-10 rounded-full bg-brand-100 flex items-center justify-center text-brand-600 font-bold text-sm">KH</div>
+            <div
+              class="w-10 h-10 rounded-full bg-brand-100 flex items-center justify-center text-brand-600 font-bold text-sm">
+              KH</div>
             <div>
               <p class="text-sm font-semibold text-navy-800">Tư vấn viên ghi danh</p>
               <p class="text-xs text-slate-400">Gói Phổ Thông – 6 tháng</p>
@@ -387,17 +576,31 @@
         </div>
 
         <!-- Feedback card 3 -->
-        <div class="bg-white rounded-2xl p-8 border border-navy-100/60 shadow-sm hover:shadow-md transition-shadow duration-200">
+        <div
+          class="bg-white rounded-2xl p-8 border border-navy-100/60 shadow-sm hover:shadow-md transition-shadow duration-200">
           <div class="flex items-center gap-1 mb-4">
-            <svg class="w-5 h-5 text-brand-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-            <svg class="w-5 h-5 text-brand-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-            <svg class="w-5 h-5 text-brand-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-            <svg class="w-5 h-5 text-brand-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-            <svg class="w-5 h-5 text-brand-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg class="w-5 h-5 text-brand-400" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+            </svg>
+            <svg class="w-5 h-5 text-brand-400" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+            </svg>
+            <svg class="w-5 h-5 text-brand-400" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+            </svg>
+            <svg class="w-5 h-5 text-brand-400" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+            </svg>
+            <svg class="w-5 h-5 text-brand-400" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+            </svg>
           </div>
-          <p class="text-slate-600 leading-relaxed italic">"600-800 bài hỏi bảo hiểm mỗi tháng là nguồn lead chất lượng. Mình đã ký được nhiều hợp đồng từ đây."</p>
+          <p class="text-slate-600 leading-relaxed italic">"600-800 bài hỏi bảo hiểm mỗi tháng là nguồn lead chất lượng.
+            Mình đã ký được nhiều hợp đồng từ đây."</p>
           <div class="mt-6 flex items-center gap-3">
-            <div class="w-10 h-10 rounded-full bg-navy-100 flex items-center justify-center text-navy-600 font-bold text-sm">TH</div>
+            <div
+              class="w-10 h-10 rounded-full bg-navy-100 flex items-center justify-center text-navy-600 font-bold text-sm">
+              TH</div>
             <div>
               <p class="text-sm font-semibold text-navy-800">Tư vấn viên Tinh Hoa</p>
               <p class="text-xs text-slate-400">Elite Consultant</p>
@@ -411,10 +614,16 @@
         <h3 class="text-center text-xl font-bold text-navy-800 mb-8">Video feedback từ tư vấn viên</h3>
         <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
           <div class="rounded-2xl overflow-hidden shadow-lg shadow-navy-100/30 border border-navy-100/40 aspect-video">
-            <iframe class="w-full h-full" src="https://www.youtube.com/embed/7nC3IszCRUM" title="Feedback tư vấn viên Review Bảo Hiểm" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+            <iframe class="w-full h-full" src="https://www.youtube.com/embed/7nC3IszCRUM"
+              title="Feedback tư vấn viên Review Bảo Hiểm" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen loading="lazy"></iframe>
           </div>
           <div class="rounded-2xl overflow-hidden shadow-lg shadow-navy-100/30 border border-navy-100/40 aspect-video">
-            <iframe class="w-full h-full" src="https://www.youtube.com/embed/0G932R1E9bg" title="Feedback tư vấn viên Review Bảo Hiểm" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+            <iframe class="w-full h-full" src="https://www.youtube.com/embed/0G932R1E9bg"
+              title="Feedback tư vấn viên Review Bảo Hiểm" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen loading="lazy"></iframe>
           </div>
         </div>
       </div>
@@ -423,12 +632,20 @@
       <div class="mt-12 text-center fade-in">
         <p class="text-sm text-slate-500 mb-4">Xem thêm feedback trên kênh chính thức</p>
         <div class="inline-flex items-center gap-4">
-          <a href="https://www.facebook.com/groups/hoireviewbaohiem" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-5 py-2.5 bg-navy-500 hover:bg-navy-600 text-white text-sm font-medium rounded-xl transition-colors duration-200 cursor-pointer">
-            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          <a href="https://www.facebook.com/groups/hoireviewbaohiem" target="_blank" rel="noopener noreferrer"
+            class="inline-flex items-center gap-2 px-5 py-2.5 bg-navy-500 hover:bg-navy-600 text-white text-sm font-medium rounded-xl transition-colors duration-200 cursor-pointer">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+            </svg>
             Facebook Group
           </a>
-          <a href="https://www.youtube.com/channel/UC_9CTNwW6cGnM3Su9O-jchw" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-5 py-2.5 bg-red-500 hover:bg-red-600 text-white text-sm font-medium rounded-xl transition-colors duration-200 cursor-pointer">
-            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+          <a href="https://www.youtube.com/channel/UC_9CTNwW6cGnM3Su9O-jchw" target="_blank" rel="noopener noreferrer"
+            class="inline-flex items-center gap-2 px-5 py-2.5 bg-red-500 hover:bg-red-600 text-white text-sm font-medium rounded-xl transition-colors duration-200 cursor-pointer">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+            </svg>
             YouTube
           </a>
         </div>
@@ -440,60 +657,94 @@
   <section id="about" class="py-16 sm:py-24 bg-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="max-w-3xl mx-auto text-center fade-in">
-        <span class="inline-block px-3 py-1 text-xs font-semibold uppercase tracking-wider text-navy-600 bg-navy-50 rounded-full">Giới thiệu</span>
-        <h2 class="mt-4 text-3xl sm:text-4xl font-bold text-navy-800">Cộng đồng bảo hiểm minh bạch hàng đầu Việt Nam</h2>
+        <span
+          class="inline-block px-3 py-1 text-xs font-semibold uppercase tracking-wider text-navy-600 bg-navy-50 rounded-full">Giới
+          thiệu</span>
+        <h2 class="mt-4 text-3xl sm:text-4xl font-bold text-navy-800">Cộng đồng bảo hiểm minh bạch hàng đầu Việt Nam
+        </h2>
         <p class="mt-6 text-lg text-slate-600 leading-relaxed">
-          Review Bảo Hiểm là nhóm Facebook hoạt động như nền tảng độc lập, nơi khách hàng bảo hiểm có thể ẩn danh đặt câu hỏi, so sánh giải pháp từ nhiều công ty và tư vấn viên, đồng thời duy trì chuẩn mực chuyên nghiệp cho tư vấn viên.
+          Review Bảo Hiểm là nhóm Facebook hoạt động như nền tảng độc lập, nơi khách hàng bảo hiểm có thể ẩn danh đặt
+          câu hỏi, so sánh giải pháp từ nhiều công ty và tư vấn viên, đồng thời duy trì chuẩn mực chuyên nghiệp cho tư
+          vấn viên.
         </p>
       </div>
 
       <div class="mt-16 grid sm:grid-cols-2 lg:grid-cols-3 gap-8 fade-in">
-        <div class="relative bg-surface-light rounded-2xl p-8 border border-navy-100/40 hover:border-navy-200 transition-colors duration-200">
+        <div
+          class="relative bg-surface-light rounded-2xl p-8 border border-navy-100/40 hover:border-navy-200 transition-colors duration-200">
           <div class="w-12 h-12 rounded-xl bg-navy-100 flex items-center justify-center mb-5">
-            <svg class="w-6 h-6 text-navy-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+            <svg class="w-6 h-6 text-navy-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
           </div>
           <h3 class="text-lg font-bold text-navy-800">Khách quan & Độc lập</h3>
-          <p class="mt-2 text-slate-600 leading-relaxed">Không thiên vị bất kỳ công ty bảo hiểm nào. Mọi thông tin được đánh giá trung lập, vì quyền lợi khách hàng.</p>
+          <p class="mt-2 text-slate-600 leading-relaxed">Không thiên vị bất kỳ công ty bảo hiểm nào. Mọi thông tin được
+            đánh giá trung lập, vì quyền lợi khách hàng.</p>
         </div>
 
-        <div class="relative bg-surface-light rounded-2xl p-8 border border-navy-100/40 hover:border-navy-200 transition-colors duration-200">
+        <div
+          class="relative bg-surface-light rounded-2xl p-8 border border-navy-100/40 hover:border-navy-200 transition-colors duration-200">
           <div class="w-12 h-12 rounded-xl bg-navy-100 flex items-center justify-center mb-5">
-            <svg class="w-6 h-6 text-navy-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" /></svg>
+            <svg class="w-6 h-6 text-navy-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+            </svg>
           </div>
           <h3 class="text-lg font-bold text-navy-800">Ẩn danh & Bảo mật</h3>
-          <p class="mt-2 text-slate-600 leading-relaxed">Khách hàng được đăng bài ẩn danh để bảo vệ danh tính. Quyền lợi khách hàng luôn được BQT ưu tiên bảo vệ.</p>
+          <p class="mt-2 text-slate-600 leading-relaxed">Khách hàng được đăng bài ẩn danh để bảo vệ danh tính. Quyền lợi
+            khách hàng luôn được BQT ưu tiên bảo vệ.</p>
         </div>
 
-        <div class="relative bg-surface-light rounded-2xl p-8 border border-navy-100/40 hover:border-navy-200 transition-colors duration-200">
+        <div
+          class="relative bg-surface-light rounded-2xl p-8 border border-navy-100/40 hover:border-navy-200 transition-colors duration-200">
           <div class="w-12 h-12 rounded-xl bg-navy-100 flex items-center justify-center mb-5">
-            <svg class="w-6 h-6 text-navy-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" /></svg>
+            <svg class="w-6 h-6 text-navy-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+            </svg>
           </div>
           <h3 class="text-lg font-bold text-navy-800">Chuẩn mực chuyên nghiệp</h3>
-          <p class="mt-2 text-slate-600 leading-relaxed">Tư vấn viên được phân hạng rõ ràng, tuân thủ quy tắc ứng xử nghiêm ngặt, đảm bảo chất lượng tư vấn.</p>
+          <p class="mt-2 text-slate-600 leading-relaxed">Tư vấn viên được phân hạng rõ ràng, tuân thủ quy tắc ứng xử
+            nghiêm ngặt, đảm bảo chất lượng tư vấn.</p>
         </div>
 
-        <div class="relative bg-surface-light rounded-2xl p-8 border border-navy-100/40 hover:border-navy-200 transition-colors duration-200">
+        <div
+          class="relative bg-surface-light rounded-2xl p-8 border border-navy-100/40 hover:border-navy-200 transition-colors duration-200">
           <div class="w-12 h-12 rounded-xl bg-brand-100 flex items-center justify-center mb-5">
-            <svg class="w-6 h-6 text-brand-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" /></svg>
+            <svg class="w-6 h-6 text-brand-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+            </svg>
           </div>
           <h3 class="text-lg font-bold text-navy-800">Kết nối thông minh</h3>
-          <p class="mt-2 text-slate-600 leading-relaxed">Hệ thống ghép nối khách hàng với tư vấn viên phù hợp. 600–800 bài hỏi bảo hiểm mỗi tháng được phân phối công bằng.</p>
+          <p class="mt-2 text-slate-600 leading-relaxed">Hệ thống ghép nối khách hàng với tư vấn viên phù hợp. 600–800
+            bài hỏi bảo hiểm mỗi tháng được phân phối công bằng.</p>
         </div>
 
-        <div class="relative bg-surface-light rounded-2xl p-8 border border-navy-100/40 hover:border-navy-200 transition-colors duration-200">
+        <div
+          class="relative bg-surface-light rounded-2xl p-8 border border-navy-100/40 hover:border-navy-200 transition-colors duration-200">
           <div class="w-12 h-12 rounded-xl bg-brand-100 flex items-center justify-center mb-5">
-            <svg class="w-6 h-6 text-brand-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+            <svg class="w-6 h-6 text-brand-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
           </div>
           <h3 class="text-lg font-bold text-navy-800">Hòa giải tranh chấp</h3>
-          <p class="mt-2 text-slate-600 leading-relaxed">Khi xảy ra mâu thuẫn giữa khách hàng và tư vấn viên, BQT đứng ra hòa giải chuyên nghiệp, ưu tiên bảo vệ khách hàng.</p>
+          <p class="mt-2 text-slate-600 leading-relaxed">Khi xảy ra mâu thuẫn giữa khách hàng và tư vấn viên, BQT đứng
+            ra hòa giải chuyên nghiệp, ưu tiên bảo vệ khách hàng.</p>
         </div>
 
-        <div class="relative bg-surface-light rounded-2xl p-8 border border-navy-100/40 hover:border-navy-200 transition-colors duration-200">
+        <div
+          class="relative bg-surface-light rounded-2xl p-8 border border-navy-100/40 hover:border-navy-200 transition-colors duration-200">
           <div class="w-12 h-12 rounded-xl bg-brand-100 flex items-center justify-center mb-5">
-            <svg class="w-6 h-6 text-brand-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" /></svg>
+            <svg class="w-6 h-6 text-brand-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+            </svg>
           </div>
           <h3 class="text-lg font-bold text-navy-800">Tăng trưởng mạnh mẽ</h3>
-          <p class="mt-2 text-slate-600 leading-relaxed">Tăng trưởng 697.78% lượt xem so với tháng trước. 80% thành viên mới là khách hàng thực sự có nhu cầu.</p>
+          <p class="mt-2 text-slate-600 leading-relaxed">Tăng trưởng 697.78% lượt xem so với tháng trước. 80% thành viên
+            mới là khách hàng thực sự có nhu cầu.</p>
         </div>
       </div>
     </div>
@@ -503,29 +754,37 @@
   <section id="stats" class="py-16 sm:py-24 bg-gradient-to-b from-navy-50 to-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center fade-in">
-        <span class="inline-block px-3 py-1 text-xs font-semibold uppercase tracking-wider text-navy-600 bg-navy-100 rounded-full">Số liệu nổi bật</span>
+        <span
+          class="inline-block px-3 py-1 text-xs font-semibold uppercase tracking-wider text-navy-600 bg-navy-100 rounded-full">Số
+          liệu nổi bật</span>
         <h2 class="mt-4 text-3xl sm:text-4xl font-bold text-navy-800">Con số ấn tượng tính đến 05/2026</h2>
       </div>
 
       <div class="mt-12 grid grid-cols-2 lg:grid-cols-5 gap-6 fade-in">
-        <div class="stat-card bg-white rounded-2xl p-6 text-center shadow-md shadow-navy-100/30 border border-navy-100/40 cursor-default">
+        <div
+          class="stat-card bg-white rounded-2xl p-6 text-center shadow-md shadow-navy-100/30 border border-navy-100/40 cursor-default">
           <div class="stat-number text-3xl sm:text-4xl font-bold text-navy-600">490,983</div>
           <p class="mt-2 text-sm text-slate-500 font-medium">Lượt xem nội dung</p>
-          <span class="inline-block mt-2 px-2 py-0.5 text-xs font-semibold text-brand-600 bg-brand-50 rounded-full">+697.78%</span>
+          <span
+            class="inline-block mt-2 px-2 py-0.5 text-xs font-semibold text-brand-600 bg-brand-50 rounded-full">+697.78%</span>
         </div>
-        <div class="stat-card bg-white rounded-2xl p-6 text-center shadow-md shadow-navy-100/30 border border-navy-100/40 cursor-default">
+        <div
+          class="stat-card bg-white rounded-2xl p-6 text-center shadow-md shadow-navy-100/30 border border-navy-100/40 cursor-default">
           <div class="stat-number text-3xl sm:text-4xl font-bold text-navy-600">5,032</div>
           <p class="mt-2 text-sm text-slate-500 font-medium">Tương tác mỗi ngày</p>
         </div>
-        <div class="stat-card bg-white rounded-2xl p-6 text-center shadow-md shadow-navy-100/30 border border-navy-100/40 cursor-default">
+        <div
+          class="stat-card bg-white rounded-2xl p-6 text-center shadow-md shadow-navy-100/30 border border-navy-100/40 cursor-default">
           <div class="stat-number text-3xl sm:text-4xl font-bold text-navy-600">80%</div>
           <p class="mt-2 text-sm text-slate-500 font-medium">Thành viên mới là KH</p>
         </div>
-        <div class="stat-card bg-white rounded-2xl p-6 text-center shadow-md shadow-navy-100/30 border border-navy-100/40 cursor-default">
+        <div
+          class="stat-card bg-white rounded-2xl p-6 text-center shadow-md shadow-navy-100/30 border border-navy-100/40 cursor-default">
           <div class="stat-number text-3xl sm:text-4xl font-bold text-navy-600">600–800</div>
           <p class="mt-2 text-sm text-slate-500 font-medium">Bài hỏi BH/tháng</p>
         </div>
-        <div class="stat-card bg-white rounded-2xl p-6 text-center shadow-md shadow-navy-100/30 border border-navy-100/40 col-span-2 lg:col-span-1 cursor-default">
+        <div
+          class="stat-card bg-white rounded-2xl p-6 text-center shadow-md shadow-navy-100/30 border border-navy-100/40 col-span-2 lg:col-span-1 cursor-default">
           <div class="stat-number text-3xl sm:text-4xl font-bold text-navy-600">~2,000</div>
           <p class="mt-2 text-sm text-slate-500 font-medium">Thành viên mới/tháng</p>
         </div>
@@ -537,9 +796,12 @@
   <section id="tiers" class="py-16 sm:py-24 bg-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center fade-in">
-        <span class="inline-block px-3 py-1 text-xs font-semibold uppercase tracking-wider text-brand-600 bg-brand-50 rounded-full">Phân hạng tư vấn viên</span>
+        <span
+          class="inline-block px-3 py-1 text-xs font-semibold uppercase tracking-wider text-brand-600 bg-brand-50 rounded-full">Phân
+          hạng tư vấn viên</span>
         <h2 class="mt-4 text-3xl sm:text-4xl font-bold text-navy-800">Ba cấp bậc tư vấn viên</h2>
-        <p class="mt-4 text-lg text-slate-500 max-w-2xl mx-auto">Hệ thống phân hạng rõ ràng, giúp khách hàng dễ dàng nhận biết mức độ chuyên nghiệp của tư vấn viên.</p>
+        <p class="mt-4 text-lg text-slate-500 max-w-2xl mx-auto">Hệ thống phân hạng rõ ràng, giúp khách hàng dễ dàng
+          nhận biết mức độ chuyên nghiệp của tư vấn viên.</p>
       </div>
 
       <div class="mt-12 grid md:grid-cols-3 gap-8 fade-in">
@@ -547,7 +809,11 @@
         <div class="tier-card bg-white rounded-2xl border-2 border-slate-200 p-8 cursor-default">
           <div class="flex items-center gap-3 mb-6">
             <div class="w-10 h-10 rounded-full bg-slate-100 flex items-center justify-center">
-              <svg class="w-5 h-5 text-slate-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" /></svg>
+              <svg class="w-5 h-5 text-slate-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+              </svg>
             </div>
             <div>
               <h3 class="text-lg font-bold text-slate-800">Cộng đồng</h3>
@@ -556,15 +822,25 @@
           </div>
           <ul class="space-y-3">
             <li class="flex items-start gap-2.5 text-sm text-slate-600">
-              <svg class="w-5 h-5 text-slate-400 shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
+              <svg class="w-5 h-5 text-slate-400 shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+              </svg>
               1 bài/tháng về kiến thức chuyên môn
             </li>
             <li class="flex items-start gap-2.5 text-sm text-slate-600">
-              <svg class="w-5 h-5 text-red-400 shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" /></svg>
+              <svg class="w-5 h-5 text-red-400 shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+              </svg>
               Không được tư vấn sản phẩm trực tiếp
             </li>
             <li class="flex items-start gap-2.5 text-sm text-slate-600">
-              <svg class="w-5 h-5 text-amber-400 shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" /></svg>
+              <svg class="w-5 h-5 text-amber-400 shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+              </svg>
               Vi phạm: khóa 28 ngày hoặc loại vĩnh viễn
             </li>
           </ul>
@@ -574,11 +850,18 @@
         </div>
 
         <!-- Tier 2: Registered -->
-        <div class="tier-card relative bg-white rounded-2xl border-2 border-brand-400 p-8 shadow-lg shadow-brand-100/40 cursor-default">
-          <div class="absolute -top-3 left-1/2 -translate-x-1/2 px-4 py-1 bg-brand-500 text-white text-xs font-bold rounded-full uppercase tracking-wider">Phổ biến</div>
+        <div
+          class="tier-card relative bg-white rounded-2xl border-2 border-brand-400 p-8 shadow-lg shadow-brand-100/40 cursor-default">
+          <div
+            class="absolute -top-3 left-1/2 -translate-x-1/2 px-4 py-1 bg-brand-500 text-white text-xs font-bold rounded-full uppercase tracking-wider">
+            Phổ biến</div>
           <div class="flex items-center gap-3 mb-6">
             <div class="w-10 h-10 rounded-full bg-brand-100 flex items-center justify-center">
-              <svg class="w-5 h-5 text-brand-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+              <svg class="w-5 h-5 text-brand-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
             </div>
             <div>
               <h3 class="text-lg font-bold text-navy-800">Ghi Danh</h3>
@@ -587,15 +870,24 @@
           </div>
           <ul class="space-y-3">
             <li class="flex items-start gap-2.5 text-sm text-slate-600">
-              <svg class="w-5 h-5 text-brand-500 shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
+              <svg class="w-5 h-5 text-brand-500 shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+              </svg>
               Tối thiểu 8 bài/tháng (không giới hạn gói premium)
             </li>
             <li class="flex items-start gap-2.5 text-sm text-slate-600">
-              <svg class="w-5 h-5 text-brand-500 shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
+              <svg class="w-5 h-5 text-brand-500 shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+              </svg>
               Được tư vấn sản phẩm trực tiếp
             </li>
             <li class="flex items-start gap-2.5 text-sm text-slate-600">
-              <svg class="w-5 h-5 text-brand-500 shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
+              <svg class="w-5 h-5 text-brand-500 shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+              </svg>
               BQT tag tên trong bài viết liên quan
             </li>
           </ul>
@@ -609,7 +901,10 @@
         <div class="tier-card bg-gradient-to-br from-navy-700 to-navy-900 rounded-2xl p-8 text-white cursor-default">
           <div class="flex items-center gap-3 mb-6">
             <div class="w-10 h-10 rounded-full bg-white/15 flex items-center justify-center">
-              <svg class="w-5 h-5 text-brand-300" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" /></svg>
+              <svg class="w-5 h-5 text-brand-300" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+              </svg>
             </div>
             <div>
               <h3 class="text-lg font-bold text-white">Tinh Hoa</h3>
@@ -618,19 +913,31 @@
           </div>
           <ul class="space-y-3">
             <li class="flex items-start gap-2.5 text-sm text-white/80">
-              <svg class="w-5 h-5 text-brand-300 shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
+              <svg class="w-5 h-5 text-brand-300 shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+              </svg>
               Đăng bài và bình luận không giới hạn
             </li>
             <li class="flex items-start gap-2.5 text-sm text-white/80">
-              <svg class="w-5 h-5 text-brand-300 shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
+              <svg class="w-5 h-5 text-brand-300 shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+              </svg>
               Xuất hiện trong album Tư vấn viên Tinh Hoa
             </li>
             <li class="flex items-start gap-2.5 text-sm text-white/80">
-              <svg class="w-5 h-5 text-brand-300 shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
+              <svg class="w-5 h-5 text-brand-300 shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+              </svg>
               Tư vấn sản phẩm chuyên sâu
             </li>
             <li class="flex items-start gap-2.5 text-sm text-white/80">
-              <svg class="w-5 h-5 text-brand-300 shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
+              <svg class="w-5 h-5 text-brand-300 shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+              </svg>
               Vượt qua 2 vòng phỏng vấn chuyên môn
             </li>
           </ul>
@@ -646,41 +953,67 @@
   <section id="team" class="py-16 sm:py-24 bg-gradient-to-b from-navy-50 to-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center fade-in">
-        <span class="inline-block px-3 py-1 text-xs font-semibold uppercase tracking-wider text-navy-600 bg-navy-100 rounded-full">Ban quản trị</span>
+        <span
+          class="inline-block px-3 py-1 text-xs font-semibold uppercase tracking-wider text-navy-600 bg-navy-100 rounded-full">Ban
+          quản trị</span>
         <h2 class="mt-4 text-3xl sm:text-4xl font-bold text-navy-800">Đội ngũ sáng lập & vận hành</h2>
-        <p class="mt-4 text-lg text-slate-500 max-w-2xl mx-auto">Cam kết không duy trì mã tư vấn viên tại bất kỳ công ty bảo hiểm nào, đảm bảo tính khách quan tuyệt đối.</p>
+        <p class="mt-4 text-lg text-slate-500 max-w-2xl mx-auto">Cam kết không duy trì mã tư vấn viên tại bất kỳ công ty
+          bảo hiểm nào, đảm bảo tính khách quan tuyệt đối.</p>
       </div>
 
       <div class="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-8 fade-in">
-        <div class="leader-card bg-white rounded-2xl p-8 border border-navy-100/60 text-center flex flex-col items-center">
-          <img class="w-20 h-20 rounded-full object-cover shadow-md border border-navy-200" src="assets/doanvietcong.jpg" alt="Đoàn Việt Công" loading="lazy" />
+        <div
+          class="leader-card bg-white rounded-2xl p-8 border border-navy-100/60 text-center flex flex-col items-center">
+          <img class="w-20 h-20 rounded-full object-cover shadow-md border border-navy-200"
+            src="assets/doanvietcong.jpg" alt="Đoàn Việt Công" loading="lazy" />
           <h3 class="mt-5 text-xl font-bold text-navy-800">Đoàn Việt Công</h3>
-          <span class="inline-block mt-1 px-3 py-0.5 text-xs font-semibold text-brand-600 bg-brand-50 rounded-full">Founder</span>
-          <p class="mt-4 text-sm text-slate-500 leading-relaxed">15 năm kinh nghiệm trong lĩnh vực Đầu tư – Tài chính – Bảo hiểm. Hiện là nhân viên Vietcombank, nhà giáo dục tài chính.</p>
+          <span
+            class="inline-block mt-1 px-3 py-0.5 text-xs font-semibold text-brand-600 bg-brand-50 rounded-full">Founder</span>
+          <p class="mt-4 text-sm text-slate-500 leading-relaxed">15 năm kinh nghiệm trong lĩnh vực Đầu tư – Tài chính –
+            Bảo hiểm. Hiện là nhân viên Vietcombank, nhà giáo dục tài chính.</p>
           <div class="mt-4 inline-flex items-center gap-1.5 px-3 py-1 bg-green-50 rounded-full">
-            <svg class="w-4 h-4 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" /></svg>
+            <svg class="w-4 h-4 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+            </svg>
             <span class="text-xs font-medium text-green-700">Không duy trì mã tư vấn</span>
           </div>
         </div>
 
-        <div class="leader-card bg-white rounded-2xl p-8 border border-navy-100/60 text-center flex flex-col items-center">
-          <img class="w-20 h-20 rounded-full object-cover shadow-md border border-navy-200" src="assets/thanhpham.jpg" alt="Thanh Phạm" loading="lazy" />
+        <div
+          class="leader-card bg-white rounded-2xl p-8 border border-navy-100/60 text-center flex flex-col items-center">
+          <img class="w-20 h-20 rounded-full object-cover shadow-md border border-navy-200" src="assets/thanhpham.jpg"
+            alt="Thanh Phạm" loading="lazy" />
           <h3 class="mt-5 text-xl font-bold text-navy-800">Thanh Phạm</h3>
-          <span class="inline-block mt-1 px-3 py-0.5 text-xs font-semibold text-brand-600 bg-brand-50 rounded-full">Co-Founders, Vận hành</span>
-          <p class="mt-4 text-sm text-slate-500 leading-relaxed">8 năm kinh nghiệm ngành bảo hiểm. Sáng lập "Sự Kiện Bảo Hiểm" – tổ chức đào tạo và sự kiện bảo hiểm.</p>
+          <span
+            class="inline-block mt-1 px-3 py-0.5 text-xs font-semibold text-brand-600 bg-brand-50 rounded-full">Co-Founders,
+            Vận hành</span>
+          <p class="mt-4 text-sm text-slate-500 leading-relaxed">8 năm kinh nghiệm ngành bảo hiểm. Sáng lập "Sự Kiện Bảo
+            Hiểm" – tổ chức đào tạo và sự kiện bảo hiểm.</p>
           <div class="mt-4 inline-flex items-center gap-1.5 px-3 py-1 bg-green-50 rounded-full">
-            <svg class="w-4 h-4 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" /></svg>
+            <svg class="w-4 h-4 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+            </svg>
             <span class="text-xs font-medium text-green-700">Không duy trì mã tư vấn</span>
           </div>
         </div>
 
-        <div class="leader-card bg-white rounded-2xl p-8 border border-navy-100/60 text-center flex flex-col items-center">
-          <img class="w-20 h-20 rounded-full object-cover shadow-md border border-navy-200" src="assets/thuynguyen.jpg" alt="Ad Thuy Nguyen" loading="lazy" />
+        <div
+          class="leader-card bg-white rounded-2xl p-8 border border-navy-100/60 text-center flex flex-col items-center">
+          <img class="w-20 h-20 rounded-full object-cover shadow-md border border-navy-200" src="assets/thuynguyen.jpg"
+            alt="Ad Thuy Nguyen" loading="lazy" />
           <h3 class="mt-5 text-xl font-bold text-navy-800">Ad Thuy Nguyen</h3>
-          <span class="inline-block mt-1 px-3 py-0.5 text-xs font-semibold text-brand-600 bg-brand-50 rounded-full">Admin, Kiểm duyệt</span>
-          <p class="mt-4 text-sm text-slate-500 leading-relaxed">5 năm kinh nghiệm bảo hiểm nhân thọ. Phụ trách kiểm duyệt nội dung và hỗ trợ cộng đồng.</p>
+          <span
+            class="inline-block mt-1 px-3 py-0.5 text-xs font-semibold text-brand-600 bg-brand-50 rounded-full">Admin,
+            Kiểm duyệt</span>
+          <p class="mt-4 text-sm text-slate-500 leading-relaxed">5 năm kinh nghiệm bảo hiểm nhân thọ. Phụ trách kiểm
+            duyệt nội dung và hỗ trợ cộng đồng.</p>
           <div class="mt-4 inline-flex items-center gap-1.5 px-3 py-1 bg-green-50 rounded-full">
-            <svg class="w-4 h-4 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" /></svg>
+            <svg class="w-4 h-4 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+            </svg>
             <span class="text-xs font-medium text-green-700">Không duy trì mã tư vấn</span>
           </div>
         </div>
@@ -692,36 +1025,51 @@
   <section id="advisory" class="py-16 sm:py-24 bg-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center fade-in">
-        <span class="inline-block px-3 py-1 text-xs font-semibold uppercase tracking-wider text-brand-600 bg-brand-50 rounded-full">Ban cố vấn 2026</span>
+        <span
+          class="inline-block px-3 py-1 text-xs font-semibold uppercase tracking-wider text-brand-600 bg-brand-50 rounded-full">Ban
+          cố vấn 2026</span>
         <h2 class="mt-4 text-3xl sm:text-4xl font-bold text-navy-800">Hội đồng cố vấn chuyên môn</h2>
-        <p class="mt-4 text-lg text-slate-500 max-w-2xl mx-auto">Giúp khách hàng hiểu rõ hợp đồng và bảo vệ quyền lợi dài hạn.</p>
+        <p class="mt-4 text-lg text-slate-500 max-w-2xl mx-auto">Giúp khách hàng hiểu rõ hợp đồng và bảo vệ quyền lợi
+          dài hạn.</p>
       </div>
 
       <div class="mt-12 grid sm:grid-cols-2 lg:grid-cols-4 gap-6 fade-in">
         <div class="bg-surface-light rounded-2xl p-6 border border-navy-100/40 text-center">
           <div class="w-14 h-14 mx-auto rounded-full bg-navy-100 flex items-center justify-center">
-            <svg class="w-7 h-7 text-navy-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+            <svg class="w-7 h-7 text-navy-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
           </div>
           <h3 class="mt-4 font-bold text-navy-800">Nguyễn Hoa</h3>
           <span class="text-sm text-brand-500 font-medium">Trưởng Ban Cố Vấn</span>
         </div>
         <div class="bg-surface-light rounded-2xl p-6 border border-navy-100/40 text-center">
           <div class="w-14 h-14 mx-auto rounded-full bg-navy-100 flex items-center justify-center">
-            <svg class="w-7 h-7 text-navy-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3" /></svg>
+            <svg class="w-7 h-7 text-navy-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3" />
+            </svg>
           </div>
           <h3 class="mt-4 font-bold text-navy-800">Lê Thị Kim Ngân</h3>
           <span class="text-sm text-brand-500 font-medium">Cố vấn Pháp lý (Luật sư)</span>
         </div>
         <div class="bg-surface-light rounded-2xl p-6 border border-navy-100/40 text-center">
           <div class="w-14 h-14 mx-auto rounded-full bg-navy-100 flex items-center justify-center">
-            <svg class="w-7 h-7 text-navy-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" /></svg>
+            <svg class="w-7 h-7 text-navy-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+            </svg>
           </div>
           <h3 class="mt-4 font-bold text-navy-800">BS Chí Tuấn</h3>
           <span class="text-sm text-brand-500 font-medium">Cố vấn Y khoa</span>
         </div>
         <div class="bg-surface-light rounded-2xl p-6 border border-navy-100/40 text-center">
           <div class="w-14 h-14 mx-auto rounded-full bg-navy-100 flex items-center justify-center">
-            <svg class="w-7 h-7 text-navy-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" /></svg>
+            <svg class="w-7 h-7 text-navy-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
+            </svg>
           </div>
           <h3 class="mt-4 font-bold text-navy-800">Đặng Thùy Dương</h3>
           <span class="text-sm text-brand-500 font-medium">Chuyên gia Bồi thường</span>
@@ -734,7 +1082,9 @@
   <section id="rules" class="py-16 sm:py-24 bg-gradient-to-b from-navy-50 to-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center fade-in">
-        <span class="inline-block px-3 py-1 text-xs font-semibold uppercase tracking-wider text-navy-600 bg-navy-100 rounded-full">Quy tắc hoạt động</span>
+        <span
+          class="inline-block px-3 py-1 text-xs font-semibold uppercase tracking-wider text-navy-600 bg-navy-100 rounded-full">Quy
+          tắc hoạt động</span>
         <h2 class="mt-4 text-3xl sm:text-4xl font-bold text-navy-800">Nguyên tắc vận hành cộng đồng</h2>
       </div>
 
@@ -742,21 +1092,34 @@
         <div class="bg-white rounded-2xl p-8 border border-green-100 shadow-sm">
           <div class="flex items-center gap-3 mb-6">
             <div class="w-10 h-10 rounded-xl bg-green-100 flex items-center justify-center">
-              <svg class="w-5 h-5 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" /></svg>
+              <svg class="w-5 h-5 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+              </svg>
             </div>
             <h3 class="text-xl font-bold text-green-800">Quyền lợi khách hàng</h3>
           </div>
           <ul class="space-y-4">
             <li class="flex items-start gap-3">
-              <svg class="w-5 h-5 text-green-500 shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
+              <svg class="w-5 h-5 text-green-500 shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+              </svg>
               <span class="text-slate-600">Được đăng bài ẩn danh để bảo vệ danh tính cá nhân</span>
             </li>
             <li class="flex items-start gap-3">
-              <svg class="w-5 h-5 text-green-500 shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
+              <svg class="w-5 h-5 text-green-500 shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+              </svg>
               <span class="text-slate-600">Quyền lợi được bảo vệ nếu xảy ra tranh chấp với tư vấn viên</span>
             </li>
             <li class="flex items-start gap-3">
-              <svg class="w-5 h-5 text-green-500 shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
+              <svg class="w-5 h-5 text-green-500 shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+              </svg>
               <span class="text-slate-600">BQT luôn ưu tiên bảo vệ quyền lợi khách hàng</span>
             </li>
           </ul>
@@ -765,21 +1128,33 @@
         <div class="bg-white rounded-2xl p-8 border border-red-100 shadow-sm">
           <div class="flex items-center gap-3 mb-6">
             <div class="w-10 h-10 rounded-xl bg-red-100 flex items-center justify-center">
-              <svg class="w-5 h-5 text-red-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636" /></svg>
+              <svg class="w-5 h-5 text-red-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636" />
+              </svg>
             </div>
             <h3 class="text-xl font-bold text-red-800">Hành vi bị cấm</h3>
           </div>
           <ul class="space-y-4">
             <li class="flex items-start gap-3">
-              <svg class="w-5 h-5 text-red-500 shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" /></svg>
+              <svg class="w-5 h-5 text-red-500 shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+              </svg>
               <span class="text-slate-600">Seeding phi đạo đức và chiến dịch bôi nhọ công ty bảo hiểm</span>
             </li>
             <li class="flex items-start gap-3">
-              <svg class="w-5 h-5 text-red-500 shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" /></svg>
+              <svg class="w-5 h-5 text-red-500 shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+              </svg>
               <span class="text-slate-600">Cướp khách hàng và sử dụng chiến thuật lôi kéo</span>
             </li>
             <li class="flex items-start gap-3">
-              <svg class="w-5 h-5 text-red-500 shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" /></svg>
+              <svg class="w-5 h-5 text-red-500 shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+              </svg>
               <span class="text-slate-600">Vi phạm: từ chối bài viết hoặc cấm vĩnh viễn</span>
             </li>
           </ul>
@@ -791,22 +1166,32 @@
   <!-- Final CTA -->
   <section class="py-16 sm:py-24 bg-gradient-to-br from-navy-600 via-navy-700 to-navy-900 relative overflow-hidden">
     <div class="absolute inset-0">
-      <div class="absolute top-0 right-0 w-96 h-96 bg-brand-500/15 rounded-full blur-3xl -translate-y-1/2 translate-x-1/3"></div>
-      <div class="absolute bottom-0 left-0 w-80 h-80 bg-brand-500/10 rounded-full blur-3xl translate-y-1/3 -translate-x-1/4"></div>
+      <div
+        class="absolute top-0 right-0 w-96 h-96 bg-brand-500/15 rounded-full blur-3xl -translate-y-1/2 translate-x-1/3">
+      </div>
+      <div
+        class="absolute bottom-0 left-0 w-80 h-80 bg-brand-500/10 rounded-full blur-3xl translate-y-1/3 -translate-x-1/4">
+      </div>
     </div>
 
     <div class="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center fade-in">
-      <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight">Sẵn sàng nâng tầm sự nghiệp tư vấn?</h2>
+      <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight">Sẵn sàng nâng tầm sự nghiệp tư
+        vấn?</h2>
       <p class="mt-6 text-lg text-white/75 max-w-2xl mx-auto leading-relaxed">
-        Ghi danh ngay để tiếp cận hàng trăm khách hàng tiềm năng mỗi tháng, xây dựng uy tín trong cộng đồng bảo hiểm lớn nhất Việt Nam.
+        Ghi danh ngay để tiếp cận hàng trăm khách hàng tiềm năng mỗi tháng, xây dựng uy tín trong cộng đồng bảo hiểm lớn
+        nhất Việt Nam.
       </p>
 
       <div class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
-        <a href="https://forms.gle/2RcX3WZk2j1vQibK6" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-8 py-4 bg-brand-500 hover:bg-brand-600 text-white text-lg font-bold rounded-xl shadow-lg shadow-brand-600/30 hover:shadow-xl hover:shadow-brand-600/40 transition-all duration-200 cursor-pointer">
+        <a href="https://forms.gle/2RcX3WZk2j1vQibK6" target="_blank" rel="noopener noreferrer"
+          class="inline-flex items-center gap-2 px-8 py-4 bg-brand-500 hover:bg-brand-600 text-white text-lg font-bold rounded-xl shadow-lg shadow-brand-600/30 hover:shadow-xl hover:shadow-brand-600/40 transition-all duration-200 cursor-pointer">
           Ghi danh năm 2026
-          <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" /></svg>
+          <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+          </svg>
         </a>
-        <a href="#packages" class="inline-flex items-center gap-2 px-8 py-4 bg-white/10 hover:bg-white/20 backdrop-blur-sm text-white text-lg font-semibold rounded-xl border border-white/20 transition-all duration-200 cursor-pointer">
+        <a href="#packages"
+          class="inline-flex items-center gap-2 px-8 py-4 bg-white/10 hover:bg-white/20 backdrop-blur-sm text-white text-lg font-semibold rounded-xl border border-white/20 transition-all duration-200 cursor-pointer">
           Xem bảng giá
         </a>
       </div>
@@ -822,30 +1207,43 @@
         <div>
           <div class="flex items-center gap-2 mb-4">
             <div class="w-8 h-8 rounded-lg bg-navy-500 flex items-center justify-center">
-              <svg class="w-4 h-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" /></svg>
+              <svg class="w-4 h-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+              </svg>
             </div>
             <span class="text-base font-bold text-white">Review Bảo Hiểm</span>
           </div>
-          <p class="text-sm leading-relaxed">Cộng đồng minh bạch, nâng tầm tư vấn. Khách quan, đồng hành cùng khách hàng.</p>
+          <p class="text-sm leading-relaxed">Cộng đồng minh bạch, nâng tầm tư vấn. Khách quan, đồng hành cùng khách
+            hàng.</p>
         </div>
 
         <div>
           <h4 class="text-sm font-semibold text-white uppercase tracking-wider mb-4">Liên kết</h4>
           <ul class="space-y-2.5">
-            <li><a href="#about" class="text-sm hover:text-white transition-colors duration-200 cursor-pointer">Giới thiệu</a></li>
-            <li><a href="#tiers" class="text-sm hover:text-white transition-colors duration-200 cursor-pointer">Phân hạng tư vấn viên</a></li>
-            <li><a href="#team" class="text-sm hover:text-white transition-colors duration-200 cursor-pointer">Ban quản trị</a></li>
-            <li><a href="#advisory" class="text-sm hover:text-white transition-colors duration-200 cursor-pointer">Ban cố vấn</a></li>
+            <li><a href="#about" class="text-sm hover:text-white transition-colors duration-200 cursor-pointer">Giới
+                thiệu</a></li>
+            <li><a href="#tiers" class="text-sm hover:text-white transition-colors duration-200 cursor-pointer">Phân
+                hạng tư vấn viên</a></li>
+            <li><a href="#team" class="text-sm hover:text-white transition-colors duration-200 cursor-pointer">Ban quản
+                trị</a></li>
+            <li><a href="#advisory" class="text-sm hover:text-white transition-colors duration-200 cursor-pointer">Ban
+                cố vấn</a></li>
           </ul>
         </div>
 
         <div>
           <h4 class="text-sm font-semibold text-white uppercase tracking-wider mb-4">Hành động</h4>
           <ul class="space-y-2.5">
-            <li><a href="#packages" class="text-sm hover:text-white transition-colors duration-200 cursor-pointer">Ghi danh 2026</a></li>
-            <li><a href="#feedback" class="text-sm hover:text-white transition-colors duration-200 cursor-pointer">Feedback tư vấn viên</a></li>
-            <li><a href="#rules" class="text-sm hover:text-white transition-colors duration-200 cursor-pointer">Quy tắc hoạt động</a></li>
-            <li><a href="https://forms.gle/2RcX3WZk2j1vQibK6" target="_blank" rel="noopener noreferrer" class="text-sm hover:text-white transition-colors duration-200 cursor-pointer">Form đăng ký</a></li>
+            <li><a href="#packages" class="text-sm hover:text-white transition-colors duration-200 cursor-pointer">Ghi
+                danh 2026</a></li>
+            <li><a href="#feedback"
+                class="text-sm hover:text-white transition-colors duration-200 cursor-pointer">Feedback tư vấn viên</a>
+            </li>
+            <li><a href="#rules" class="text-sm hover:text-white transition-colors duration-200 cursor-pointer">Quy tắc
+                hoạt động</a></li>
+            <li><a href="https://forms.gle/2RcX3WZk2j1vQibK6" target="_blank" rel="noopener noreferrer"
+                class="text-sm hover:text-white transition-colors duration-200 cursor-pointer">Form đăng ký</a></li>
           </ul>
         </div>
 
@@ -867,32 +1265,38 @@
   </footer>
 
   <!-- Social Proof Toast -->
-  <div id="socialProofToast" class="fixed bottom-6 left-6 z-40 max-w-sm transform translate-y-full opacity-0 transition-all duration-500 ease-out pointer-events-none">
-    <div class="bg-white rounded-2xl shadow-2xl shadow-navy-900/15 border border-navy-100/60 p-4 flex items-center gap-3">
-      <div id="toastAvatar" class="w-10 h-10 rounded-full bg-brand-100 flex items-center justify-center text-brand-600 font-bold text-sm shrink-0"></div>
+  <div id="socialProofToast"
+    class="fixed bottom-6 left-6 z-40 max-w-sm transform translate-y-full opacity-0 transition-all duration-500 ease-out pointer-events-none">
+    <div
+      class="bg-white rounded-2xl shadow-2xl shadow-navy-900/15 border border-navy-100/60 p-4 flex items-center gap-3">
+      <div id="toastAvatar"
+        class="w-10 h-10 rounded-full bg-brand-100 flex items-center justify-center text-brand-600 font-bold text-sm shrink-0">
+      </div>
       <div class="min-w-0">
         <p id="toastMessage" class="text-sm font-medium text-navy-800 truncate"></p>
         <p id="toastTime" class="text-xs text-slate-400 mt-0.5"></p>
       </div>
       <div class="shrink-0 ml-1">
-        <svg class="w-5 h-5 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+        <svg class="w-5 h-5 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
       </div>
     </div>
   </div>
 
   <script>
-    document.getElementById('mobileMenuBtn').addEventListener('click', function() {
+    document.getElementById('mobileMenuBtn').addEventListener('click', function () {
       document.getElementById('mobileMenu').classList.toggle('hidden');
     });
 
-    document.querySelectorAll('#mobileMenu a').forEach(function(link) {
-      link.addEventListener('click', function() {
+    document.querySelectorAll('#mobileMenu a').forEach(function (link) {
+      link.addEventListener('click', function () {
         document.getElementById('mobileMenu').classList.add('hidden');
       });
     });
 
     function revealElements() {
-      document.querySelectorAll('.fade-in').forEach(function(el) {
+      document.querySelectorAll('.fade-in').forEach(function (el) {
         var rect = el.getBoundingClientRect();
         if (rect.top < window.innerHeight + 100) {
           el.classList.add('visible');
@@ -901,15 +1305,15 @@
     }
 
     if ('IntersectionObserver' in window) {
-      var observer = new IntersectionObserver(function(entries) {
-        entries.forEach(function(entry) {
+      var observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
           if (entry.isIntersecting) {
             entry.target.classList.add('visible');
           }
         });
       }, { threshold: 0.05, rootMargin: '0px 0px 100px 0px' });
 
-      document.querySelectorAll('.fade-in').forEach(function(el) {
+      document.querySelectorAll('.fade-in').forEach(function (el) {
         observer.observe(el);
       });
     }
@@ -918,7 +1322,7 @@
     revealElements();
 
     // Social proof notifications
-    (function() {
+    (function () {
       var names = [
         'Minh Tuấn', 'Thanh Hằng', 'Hoàng Nam', 'Thu Trang', 'Đức Anh',
         'Ngọc Linh', 'Văn Hùng', 'Thúy An', 'Quốc Bảo', 'Mai Phương',
@@ -955,7 +1359,7 @@
         var p = pick(packages);
         var t = pick(times);
 
-        var initials = n.split(' ').map(function(w) { return w[0]; }).join('').slice(0, 2);
+        var initials = n.split(' ').map(function (w) { return w[0]; }).join('').slice(0, 2);
         avatar.textContent = initials;
         avatar.className = 'w-10 h-10 rounded-full flex items-center justify-center font-bold text-sm shrink-0 ' + p.color + ' ' + p.text;
         message.textContent = n + ' (' + c + ') đã đăng ký gói ' + p.name;
@@ -964,19 +1368,20 @@
         toast.style.transform = 'translateY(0)';
         toast.style.opacity = '1';
 
-        setTimeout(function() {
+        setTimeout(function () {
           toast.style.transform = 'translateY(calc(100% + 24px))';
           toast.style.opacity = '0';
-          setTimeout(function() { showing = false; }, 500);
+          setTimeout(function () { showing = false; }, 500);
         }, 4000);
       }
 
       setTimeout(showToast, 5000);
-      setInterval(function() {
+      setInterval(function () {
         var delay = Math.floor(Math.random() * 6000) + 7000;
         setTimeout(showToast, delay);
       }, 14000);
     })();
   </script>
 </body>
+
 </html>
