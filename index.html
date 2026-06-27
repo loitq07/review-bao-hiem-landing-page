@@ -499,46 +499,44 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="grid lg:grid-cols-12 gap-12 items-center">
         
-        <!-- Left Column: Image with overlapping circle decoration -->
-        <div class="lg:col-span-5 flex justify-center relative fade-in min-h-[360px] sm:min-h-[440px]">
+        <!-- Left Column: Image with border frame decoration -->
+        <div class="lg:col-span-5 flex justify-center relative fade-in">
           <!-- Decorative Background Elements -->
           <div class="absolute w-72 h-72 sm:w-80 sm:h-80 bg-brand-500 rounded-full opacity-10 blur-2xl -top-6 -left-6"></div>
           <div class="absolute w-80 h-80 sm:w-96 sm:h-96 bg-navy-500 rounded-full opacity-5 blur-3xl -bottom-10 -right-10"></div>
           
-          <!-- Big Orange Circle Background -->
-          <div class="absolute w-64 h-64 sm:w-72 sm:h-72 bg-gradient-to-br from-brand-400 to-brand-500 rounded-full shadow-lg shadow-brand-500/20 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"></div>
-          
-          <!-- Outer glowing rings -->
-          <div class="absolute w-72 h-72 sm:w-80 sm:h-80 rounded-full border border-brand-200/40 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 scale-90 animate-pulse" style="animation-duration: 4s;"></div>
-          <div class="absolute w-80 h-80 sm:w-96 sm:h-96 rounded-full border border-brand-100/20 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 scale-95"></div>
-
           <!-- Decorative grid of dots (top-left) -->
-          <div class="absolute top-4 left-4 text-brand-300/40 hidden sm:block">
+          <div class="absolute -top-4 -left-4 text-brand-300/40 hidden sm:block">
             <svg width="80" height="80" fill="currentColor" viewBox="0 0 100 100">
               <defs>
-                <pattern id="dot-pattern" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+                <pattern id="dot-pattern-card" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
                   <circle cx="2" cy="2" r="2" />
                 </pattern>
               </defs>
-              <rect width="100" height="100" fill="url(#dot-pattern)" />
+              <rect width="100" height="100" fill="url(#dot-pattern-card)" />
             </svg>
           </div>
           
           <!-- Decorative grid of dots (bottom-right) -->
-          <div class="absolute bottom-4 right-4 text-navy-200/40 hidden sm:block">
+          <div class="absolute -bottom-4 -right-4 text-navy-200/40 hidden sm:block">
             <svg width="80" height="80" fill="currentColor" viewBox="0 0 100 100">
               <defs>
-                <pattern id="dot-pattern-navy" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+                <pattern id="dot-pattern-card-navy" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
                   <circle cx="2" cy="2" r="2" />
                 </pattern>
               </defs>
-              <rect width="100" height="100" fill="url(#dot-pattern-navy)" />
+              <rect width="100" height="100" fill="url(#dot-pattern-card-navy)" />
             </svg>
           </div>
 
-          <!-- Consultant Image (Overlapping the circle) -->
-          <div class="relative z-10 flex items-end justify-center w-full h-full">
-            <img src="assets/female_consultant.png" alt="Tư vấn viên Review Bảo Hiểm" class="w-[85%] sm:w-[90%] max-w-[280px] h-auto object-contain filter drop-shadow-[0_15px_30px_rgba(0,0,0,0.12)] transition-transform duration-500 hover:scale-105 hover:rotate-1" />
+          <!-- Glassmorphism Card with Rounded Border -->
+          <div class="relative w-full max-w-[350px] aspect-[4/5] bg-white rounded-3xl border-2 border-brand-200/70 p-4 shadow-xl shadow-navy-100/30 flex items-end justify-center overflow-hidden transition-all duration-300 hover:shadow-2xl hover:shadow-brand-100/50">
+            <!-- Orange decorative pattern behind character -->
+            <div class="absolute w-56 h-56 bg-brand-500/10 rounded-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 filter blur-sm"></div>
+            <div class="absolute w-48 h-48 bg-gradient-to-br from-brand-100 to-brand-200 rounded-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"></div>
+            
+            <!-- Consultant Image -->
+            <img src="assets/female_consultant.png" alt="Tư vấn viên Review Bảo Hiểm" class="relative z-10 w-[95%] h-auto object-contain max-h-[95%] filter drop-shadow-[0_8px_16px_rgba(0,0,0,0.06)] transition-transform duration-500 hover:scale-105" />
           </div>
         </div>
         
